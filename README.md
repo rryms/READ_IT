@@ -11,7 +11,9 @@ VIM
 
 [vim-galore](https://github.com/mhinz/vim-galore)
 
+the-art-of-command-line
 
+[The Art of Command Line](https://github.com/jlevy/the-art-of-command-line#the-art-of-command-line)
 
 --------------
 **Modern tools**

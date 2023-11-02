@@ -4,10 +4,12 @@ commputer science is an abstraction of the human practicing
 In order to get cross it ,Read it!
 
 ## Computer 
+
+[The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 -------------------
 **basic tools**
 ---------
-VIM
+VIM-[awesome](https://github.com/akrawchyk/awesome-vim#table-of-contents)
 
 [vim-galore](https://github.com/mhinz/vim-galore)
 
@@ -34,9 +36,10 @@ VScode
 [intermediate](https://github.com/oz123/awesome-c#intermediate-resources-online)
 
 
-[gnu make](https://www.gnu.org/software/make/)
+[gnu make](https://www.gnu.org/software/make/manual/html_node/index.html)
 
 ---------
 
 ## Language_English
 
+    

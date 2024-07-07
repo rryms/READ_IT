@@ -1,0 +1,1 @@
+Finish cs61c before nju_ics, not absolutely. Practice in virtual.

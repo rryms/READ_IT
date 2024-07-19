@@ -36,3 +36,7 @@ Finish cs61c before nju_ics, not absolutely. Practice in reality.
     1. 408
     2. 数学
     
+
+
+## Feelings
+now A very strong feelings that 真正无所事事的正是无所事事本身：刷手机就像是对自身的放游

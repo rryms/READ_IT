@@ -23,6 +23,7 @@ When inspired, change.
 ## 数学
 ## 408
 Finish cs61c before nju_ics, not absolutely. Practice in reality.
+cs61c_2024 one day one lab
 
 积极的自我暗示，学着变化，会安排好这些
 

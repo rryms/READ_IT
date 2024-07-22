@@ -14,6 +14,7 @@
 
 
 积极的自我暗示，学着变化，会安排好这些
+It is a mistake to look too far ahead. Only one link in the chain of destiny can be handled at a time.
 
 ## 计划的规划与切入角度
 1. Future plan

@@ -42,7 +42,8 @@ Finish cs61c before nju_ics, not absolutely. Practice in reality.
 
 ## Feelings
 now A very strong feelings that 真正无所事事的正是无所事事本身：刷手机就像是对自身的放游
-
+做事情的时候，总给我一种感觉，这个还有那个，一步步搞，摆正心态: 搞不清楚自己是什么了(重要的是激情)
+没有了激情，要有决断：休息一会，散步，给别人聊会天，听会歌
 要积极的思考学习的状态，学习新的东西——一定会难受
 怎么刷题——对这些东西的优先级——切入的角度要有清楚的认识。
 
@@ -50,3 +51,7 @@ When reading a bit boring, check a music firmly.快刀斩乱麻
 1. [瓦格纳](https://www.bilibili.com/video/BV1BU4y187ck/?spm_id_from=333.999.0.0&vd_source=200de2063d50f5bf2560cfd0c5dd0c61)
 When inspired, change.
 2. 
+
+## Excited
+来点激情
+[SHOSTAKOVICH](https://www.bilibili.com/video/BV1Hx411W7uj?p=11)

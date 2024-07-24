@@ -16,6 +16,16 @@
 积极的自我暗示，学着变化，会安排好这些
 It is a mistake to look too far ahead. Only one link in the chain of destiny can be handled at a time.
 
+## daily plan
+做每天的计划，就是要为没有发生的事情进行规划；为实干者指明一条道路
+
+![reference](./pictures/2024_7_25_6_19.png)
+
+数学：线代，
+计算机：强化，数据结构,
+
+
+
 ## 计划的规划与切入角度
 1. Future plan
     1. cs61b

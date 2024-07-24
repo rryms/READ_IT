@@ -51,12 +51,24 @@ to view each frame as a collection of bytes (characters) rather than a collectio
   *  the Digital Data Communication Message Protocol (DDCMP) used
 * two approaches to byte-oriented framing
   * The first is to use special characters known as sentinel characters to indicate where frames start and end. 
+  * The alternative to detecting the end of a frame with a sentinel value is to include the number of bytes in the frame at the beginning of the frame, in the frame header. 
+
 #### Bit-Oriented Protocols(HDLC)
 
 #### Clock-Based Framing(SONET)
 
+### 2.5 Reliable Transmission
+#### Stop-and-Wait
+#### Sliding Window
+#### Concurrent Logical Channels
 ### 2.6 Multi-Access Networks
 Ethernet eventually became the dominant local area networking technology, emerging from a pack of competing technologies. Today, it competes mainly with 802.11 wireless networks but remains extremely popular in campus networks and data centers. The more general name for the technology behind the Ethernet is **Carrier Sense, Multiple Access with Collision Detect (CSMA/CD)**.
+
+#### Access Protocol 
+ This algorithm is commonly called the Ethernet’s media access control (MAC).It is typically implemented in hardware on the network adaptor.  
+ * Frame Format
+ * Addresses
+ * Transmitter Algorithm
 
 ### phrases
 

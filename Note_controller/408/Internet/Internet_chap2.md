@@ -11,4 +11,52 @@ these five issues—encoding, framing, error detection, reliable delivery, and a
 
 This chapter considers these issues in the context of specific network technologies: point-to-point fiber links (for which SONET is the prevalent example); Carrier Sense Multiple Access (CSMA) networks (of which classical Ethernet and Wi-Fi are the most famous examples); fiber-to-the home (for which PON is the dominant standard); and mobile wireless (where 4G is rapidly morphing into 5G).
 
-### terminal
+### Technology Landscape
+given you a taste of the diversity of link types that exist and some of the reasons for that diversity
+
+* some physics
+  * the medium
+  * frequency
+* The problem of encoding binary data onto electromagnetic signals
+To make the topic more manageable, think it as being divided into two layers.
+  * modulation
+  * classify links is in terms of how they are used
+    * last-mile links(acess networks)
+    * long-distance backbone 
+      * SONET(Synchronous Optical Network)
+
+* Internet service provider(ISP): an end-user's view of the Internet.
+* local area networks(LANs): Ethernet, and its wireless cousin Wi-Fi, are the dominant technologies in this space.
+
+### 2.2Encoding
+ **a network adaptor**—a piece of hardware that connects a node to a link. The network adaptor contains a signalling component that actually encodes bits into signals at the sending node and decodes signals into bits at the receiving node
+
+* non-return to zero(NRZ)
+Problem: 
+1. long strings of 1s or 0s
+2. frequent transitions from high to low and vice versa
+
+   * non-return to zero inverted(NRZI)
+   * Manchester encoding
+   * Differential Manchester
+
+Problems:
+
+### 2.3Framing 
+There are several ways to address the framing problem. This section uses three different protocols to illustrate the various points in the design space. 
+#### Byte-Oriented Protocols(PPP):Point-to-Point Protocol
+to view each frame as a collection of bytes (characters) rather than a collection of bits
+* used cases
+  *  the Binary Synchronous Communication (BISYNC) protocol developed
+  *  the Digital Data Communication Message Protocol (DDCMP) used
+* two approaches to byte-oriented framing
+  * The first is to use special characters known as sentinel characters to indicate where frames start and end. 
+#### Bit-Oriented Protocols(HDLC)
+
+#### Clock-Based Framing(SONET)
+
+### 2.6 Multi-Access Networks
+Ethernet eventually became the dominant local area networking technology, emerging from a pack of competing technologies. Today, it competes mainly with 802.11 wireless networks but remains extremely popular in campus networks and data centers. The more general name for the technology behind the Ethernet is **Carrier Sense, Multiple Access with Collision Detect (CSMA/CD)**.
+
+### phrases
+

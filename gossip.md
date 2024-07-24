@@ -2,8 +2,9 @@
 1. mac、手机都可以上网，ubuntu连就不可以，手机连上开热点可以
 
 睡觉其实是最有效率的事情，最浪费时间的恰恰是：思维无意义的重复(刷短视频，，，，),学会积极地睡觉
-休息是每个人都要干的，重要的是怎么打断重复,线性的东西-休息够了，就干活
-1. [我的青春物语](https://www.bilibili.com/bangumi/play/ep32242?spm_id_from=333.337.0.0&from_spmid=666.25.episode.0)
-2. [雍正王朝](https://www.bilibili.com/bangumi/play/ep731451?spm_id_from=333.337.0.0)
-3. [大明王朝1566](https://v.youku.com/v_show/id_XMjQ4NDcxODQwOA==.html?spm=a2h0c.8166622.PhoneSokuProgram_1.dselectbutton_1&showid=cbff9f40962411de83b1)
-4. [北平无战事](https://v.youku.com/v_show/id_XMTU2ODM2NDg1Mg==.html?spm=a2h0c.8166622.showComboModule_2.dposter_13&s=e07d3d020b0e11e38b3f)
+休息是每个人都要干的，重要的是怎么打断重复,线性的东西-休息够了，就干活。看电视剧是有问题的，很容易从点线面不断延伸下去。还是要牢牢把握住人生的主线。
+1. 外文小说？
+   * 读书的技巧很重要
+
+浪费时间的主要问题就是没想清楚就干：吃饭的时候，并非想清楚要吃什么才行动，要么是给徐晶打电话，要么是别的什么事。
+玩游戏，看电视剧，第一动力往往并非感兴趣，而是无聊，自己要做到不是因为无聊而看电视剧，而是意识到自己的无聊，以致一生，反对的不是电视剧，反抗的人生的无聊

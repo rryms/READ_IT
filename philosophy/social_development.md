@@ -8,3 +8,8 @@ the social practice and the comprehence of society, viewed as science,不要刻�
 * 关系：近乎于一种整体的把握, more likely to relatives
 * 能力：单一的视角
 * 科学技术：技术的东西才是真正改变人的认识的关键
+
+### 中西方差异的根源
+最根本的就是文化差异，其余的几乎就是由于社会发展的问题造成的社会差异；
+我自己不断看视频，也是在不断试图体会民族情感。我自己的身份认同问题，，，，
+[Russian Intellual](https://www.bilibili.com/video/BV11j411G7xC)

@@ -13,3 +13,4 @@ the social practice and the comprehence of society, viewed as science,不要刻�
 最根本的就是文化差异，其余的几乎就是由于社会发展的问题造成的社会差异；
 我自己不断看视频，也是在不断试图体会民族情感。我自己的身份认同问题，，，，
 [Russian Intellual](https://www.bilibili.com/video/BV11j411G7xC)
+

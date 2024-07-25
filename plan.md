@@ -34,8 +34,8 @@ It is a mistake to look too far ahead. Only one link in the chain of destiny can
     4. cs162
 
 2. living struggle
-    1. 408
-    2. 数学
+    1. [408](./Note_controller/408/)
+    2. [数学](./Note_controller/math/learning_control.md)
 
 ### English
 * Lonely Reader
@@ -59,9 +59,9 @@ now A very strong feelings that 真正无所事事的正是无所事事本身：
 怎么刷题——对这些东西的优先级——切入的角度要有清楚的认识。
 
 When reading a bit boring, check a music firmly.快刀斩乱麻
-1. [瓦格纳](https://www.bilibili.com/video/BV1BU4y187ck/?spm_id_from=333.999.0.0&vd_source=200de2063d50f5bf2560cfd0c5dd0c61)
+1. [瓦格纳](https://www.bilibili.com/video/BV1BU4y187ck)
 When inspired, change.
-2. 
+2. [布鲁克纳](https://www.bilibili.com/video/BV1ez4y1j71w)
 
 ## Excited
 来点激情

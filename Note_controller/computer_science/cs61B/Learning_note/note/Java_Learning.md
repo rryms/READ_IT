@@ -345,3 +345,8 @@ while (seer.hasNext()){
 }
 
 ```
+
+### Object Methods
+``equals()`` and ``==`` have different behaviors in Java. ``==`` Checks if two objects are actually the same object in memory. Remember, pass-by-value! ``==`` checks if two boxes hold the same thing. For primitives, this means checking if the values are equal. For objects, this means checking if the address/pointer is equal.
+
+

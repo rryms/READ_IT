@@ -1,4 +1,4 @@
-[TOC]
+see the [lec_note](../../Note_controller/computer_science/cs61c/note/)
 # Note_reset
 9 lab, 4 proj,写[cs61c_2024](https://cs61c.org/su24/)
 # lab0
@@ -61,4 +61,21 @@ C has a library of functions for manipulating strings, such as:
 * **strcpy**: copies a string from one memory location to another, one character at a time until it reaches a null terminator (the null terminator is copied as well)
 
 [double quotes vs. single quotes](https://stackoverflow.com/questions/3683602/single-quotes-vs-double-quotes-in-c-or-c)
+
+* Copying Strings
+the use of [strcpy](https://cplusplus.com/reference/cstring/strcpy/)
+the use of [strncpy](https://cplusplus.com/reference/cstring/strncpy/): No null-character is implicitly appended at the end of destination if source is longer than num. Thus, in this case, destination shall not be considered a null terminated C string (reading it as such would overflow).
+
+## Struct
+
+* **typedef** vs. struct student.[THIS LINK](https://stackoverflow.com/questions/1675351/typedef-struct-vs-struct-definitions)
+
+* struct 的地址操作-----lec
+
+
+# lab2 C Debugging
+
+## Compiler Warnings and Errors
+read the gcc warnings and errors
+
 

@@ -78,4 +78,26 @@ the use of [strncpy](https://cplusplus.com/reference/cstring/strncpy/): No null-
 ## Compiler Warnings and Errors
 read the gcc warnings and errors
 
+## What is GDB
+[GDB website](https://www.gnu.org/software/gdb/)
+[mannal](https://sourceware.org/gdb/current/onlinedocs/gdb.html/)
+GDB, the GNU Project debugger, allows you to see what is going on 'inside' another program while it executes -- or what another program was doing at the moment it crashed.
 
+GDB can do four main kinds of things (plus other things in support of these) to help you catch bugs in the act:
+
+
+* Start your program, specifying anything that might affect its behavior.
+* Make your program stop on specified conditions.
+* Examine what has happened, when your program has stopped.
+* Change things in your program, so you can experiment with correcting the effects of one bug and go on to learn about another.
+
+GDB commands
+
+
+## Valgrind
+
+### bugs
+
+Even with a debugger, we might not be able to catch all bugs. Some bugs are what we refer to as "bohrbugs", meaning they manifest reliably under a well-defined, but possibly unknown, set of conditions. Other bugs are what we call "heisenbugs", and instead of being determinant, they're known to disappear or alter their behavior when one attempts to study them. We can detect the first kind with debuggers, but the second kind may slip under our radar because they're (at least in C) often due to mis-managed memory. Remember that unlike other programming languages, C requires you (the programmer) to manually manage your memory.
+
+We can use a tool called Valgrind to help catch to help catch "heisenbugs" and "bohrbugs". Valgrind is a program which emulates your CPU and tracks your memory accesses. This slows down the process you're running (which is why we don't, for example, always run all executables inside Valgrind) but also can expose bugs that may only display visible incorrect behavior under a unique set of circumstances.

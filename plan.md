@@ -40,9 +40,11 @@ It is a mistake to look too far ahead. Only one link in the chain of destiny can
 ### English
 * Lonely Reader
 * 韦小绿
-背单词，作文，对文意的分析理解
+#### 背单词，作文，对文意的分析理解
 * 韦小绿---给记单词一个角度
 * 西简--白云、船长的技巧...
+
+* add a markdown dedicted to word reminding.
 
 ### 数学
 [一些想法](https://www.bilibili.com/video/BV1Hn4y1f7gc/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=200de2063d50f5bf2560cfd0c5dd0c61)

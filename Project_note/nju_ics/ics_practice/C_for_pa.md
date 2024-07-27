@@ -1,3 +1,4 @@
+[class](https://space.bilibili.com/49964811/?spm_id_from=333.999.0.0)
 ## C语言拾遗之编程实践__W2
 ***本讲概述***
 * 在IDE 里，为什么按一个键，就能编译运行？

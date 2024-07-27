@@ -94,10 +94,24 @@ GDB can do four main kinds of things (plus other things in support of these) to 
 GDB commands
 
 
+### Segment Fault
+
+One very important thing that GDB can do is debug segfaults.
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555555551f3 in ben (arr=0x7fffffffdcd0, size=10) at ex5_segfault.c:15
+15          *ptr = 10;
+(gdb) backtrace
+#0  0x00005555555551f3 in ben (arr=0x7fffffffdcd0, size=10) at ex5_segfault.c:15
+#1  0x00005555555552cc in main () at ex5_segfault.c:33
+
+* size = 10
+
+
 ## Valgrind
 
 ### bugs
 
-Even with a debugger, we might not be able to catch all bugs. Some bugs are what we refer to as "bohrbugs", meaning they manifest reliably under a well-defined, but possibly unknown, set of conditions. Other bugs are what we call "heisenbugs", and instead of being determinant, they're known to disappear or alter their behavior when one attempts to study them. We can detect the first kind with debuggers, but the second kind may slip under our radar because they're (at least in C) often due to mis-managed memory. Remember that unlike other programming languages, C requires you (the programmer) to manually manage your memory.
+Even with a debugger, we might not be able to catch all bugs. Some bugs are what we refer to as "**bohrbugs**", meaning they manifest reliably under a well-defined, but possibly unknown, set of conditions. Other bugs are what we call "**heisenbugs**", and instead of being determinant, they're known to disappear or alter their behavior when one attempts to study them. We can detect the first kind with debuggers, but the second kind may slip under our radar because they're (at least in C) often due to mis-managed memory. Remember that unlike other programming languages, C requires you (the programmer) to manually manage your memory.
 
 We can use a tool called Valgrind to help catch to help catch "heisenbugs" and "bohrbugs". Valgrind is a program which emulates your CPU and tracks your memory accesses. This slows down the process you're running (which is why we don't, for example, always run all executables inside Valgrind) but also can expose bugs that may only display visible incorrect behavior under a unique set of circumstances.

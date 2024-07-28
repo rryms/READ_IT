@@ -41,6 +41,8 @@ Problem:
    * Differential Manchester
 
 Problems:
+The problem with the Manchester encoding scheme is that it doubles the rate at which signal transitions are made on the link, which means that the receiver has half the time to detect each pulse of the signal. The rate at which the signal changes is called **the link’s baud rate**. In the case of the Manchester encoding, the bit rate is half the baud rate, so the encoding is considered only 50% efficient. Keep in mind that if the receiver had been able to keep up with the faster baud rate required by the Manchester encoding in Figure 25, then both NRZ and NRZI could have been able to transmit twice as many bits in the same time period
+
 
 ### 2.3Framing 
 There are several ways to address the framing problem. This section uses three different protocols to illustrate the various points in the design space. 
@@ -64,11 +66,42 @@ to view each frame as a collection of bytes (characters) rather than a collectio
 ### 2.6 Multi-Access Networks
 Ethernet eventually became the dominant local area networking technology, emerging from a pack of competing technologies. Today, it competes mainly with 802.11 wireless networks but remains extremely popular in campus networks and data centers. The more general name for the technology behind the Ethernet is **Carrier Sense, Multiple Access with Collision Detect (CSMA/CD)**.
 
+* As indicated by the CSMA name, the Ethernet is a multiple-access network, meaning that a set of nodes sends and receives frames over a shared link. You can, therefore, think of an Ethernet as being like a bus that has multiple stations plugged into it. The “carrier sense” in CSMA/CD means that all the nodes can distinguish between an idle and a busy link, and “collision detect” means that a node listens as it transmits and can therefore detect when a frame it is transmitting has interfered (collided) with a frame transmitted by another node.
+
+Modern Ethernet links are now largely point to point; that is, they connect one host to an Ethernet switch, or they interconnect switches. As a consequence, the “multiple access” algorithm is not used much in today’s wired Ethernets, but a variant is now used in wireless networks, such as 802.11 networks (also known as Wi-Fi).
+
+#### Physical Properties
+* A **transceiver**, a small device directly attached to the tap, detected when the line was idle and drove the signal when the host was transmitting. It also received incoming signals. The transceiver, in turn, connected to an Ethernet adaptor, which was plugged into the host. 
+* Multiple Ethernet segments can be joined together by **repeaters** (or a multi-port variant of a repeater, called a **hub**). A repeater is a device that forwards digital signals, much like an amplifier forwards analog signals; repeaters do not understand bits or frames. No more than four repeaters could be positioned between any pair of hosts, meaning that a classical Ethernet had a total reach of only 2500 m
+
 #### Access Protocol 
- This algorithm is commonly called the Ethernet’s media access control (MAC).It is typically implemented in hardware on the network adaptor.  
+ This algorithm is commonly called the **Ethernet’s media access control (MAC)**.It is typically implemented in hardware on the network adaptor.  
  * Frame Format
+
  * Addresses
+To summarize, an Ethernet adaptor receives all frames and accepts
+1. Frames addressed to its own address
+2. Frames addressed to the broadcast address
+3. Frames addressed to a multicast address, if it has been instructed to listen to that address
+4. All frames, if it has been placed in promiscuous mode
+
+
  * Transmitter Algorithm
+ the real smarts are implemented at the sender’s side
+
+### 2.7 Wireless Networks
+#### Basic Issues
+* medium efficiently
+
+#### Wi-Fi(802.11)
+* using a variant of frequency division multiplexing called orthogonal frequency division multiplexing (OFDM)
+##### Collision Avoidance 
+
+##### Distribution System
+##### Frame Format
+#### Bluetooth(802.15.1)
+
+
 
 ### phrases
 

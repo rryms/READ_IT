@@ -24,6 +24,15 @@ It is a mistake to look too far ahead. Only one link in the chain of destiny can
 数学：线代，
 计算机：强化，数据结构,
 
+晚上的时候考虑，看一下，葛旭的课，没太多内容；白云的留白天听
+### 具体的想想
+数学：线代，一天两章
+微积分，
+
+计算机：数据结构
+计网
+
+英语；
 
 
 ## 计划的规划与切入角度
@@ -64,6 +73,8 @@ When reading a bit boring, check a music firmly.快刀斩乱麻
 1. [瓦格纳](https://www.bilibili.com/video/BV1BU4y187ck)
 When inspired, change.
 2. [布鲁克纳](https://www.bilibili.com/video/BV1ez4y1j71w)
+
+* read_it [weread](https://weread.qq.com/)
 
 ## Excited
 来点激情

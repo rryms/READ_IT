@@ -55,7 +55,12 @@ to view each frame as a collection of bytes (characters) rather than a collectio
   * The first is to use special characters known as sentinel characters to indicate where frames start and end. 
   * The alternative to detecting the end of a frame with a sentinel value is to include the number of bytes in the frame at the beginning of the frame, in the frame header. 
 
+1. The idea is to denote the beginning of a frame by sending a special SYN (synchronization) character. The data portion of the frame is then sometimes contained between two more special characters: STX (start of text) and ETX (end of text).
+The standard way to overcome this problem by “escaping” the character by preceding it with a DLE (data-link-escape) character whenever it appears in the body of a frame; the DLE character is also escaped (by preceding it with an extra DLE) in the frame body. 
+2. 
+
 #### Bit-Oriented Protocols(HDLC)
+High-Level Data Link Control(HDLC)
 
 #### Clock-Based Framing(SONET)
 
@@ -98,6 +103,7 @@ To summarize, an Ethernet adaptor receives all frames and accepts
 ##### Collision Avoidance 
 
 ##### Distribution System
+
 ##### Frame Format
 #### Bluetooth(802.15.1)
 

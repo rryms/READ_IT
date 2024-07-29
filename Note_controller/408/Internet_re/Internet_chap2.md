@@ -64,22 +64,37 @@ High-Level Data Link Control(HDLC)
 
 #### Clock-Based Framing(SONET)
 
+### 2.4 Error Detection 
+#### 2.4.1 Internet Checksum Algorithm
+#### 2.4.2 Cyclic Redundancy Check
+ This is referred to as “polynomial arithmetic modulo 2.” Since this is a networking book, not a mathematics text, let’s focus on the key properties of this type of arithmetic for our purposes (which we ask you to accept on faith):
+ * Any polynomial$\ B(x) $can be divided by a divisor polynomial $\ C(x)$ 
+ if $\ B(x)$is of higher degree than $\ C(x)$.
+ * Any polynomial $\ B(x)$ can be divided once by a divisor polynomial $\ C(x)$if $\ B(x)$ is of the same degree as $\ C(x)$ 
+* The remainder obtained when $\ B(x)$ is divided by $\ C(x)$ is obtained by performing the exclusive OR (XOR) operation on each pair of matching coefficients.
+
 ### 2.5 Reliable Transmission
+
 #### Stop-and-Wait
+
 #### Sliding Window
+
 #### Concurrent Logical Channels
+
 ### 2.6 Multi-Access Networks
 Ethernet eventually became the dominant local area networking technology, emerging from a pack of competing technologies. Today, it competes mainly with 802.11 wireless networks but remains extremely popular in campus networks and data centers. The more general name for the technology behind the Ethernet is **Carrier Sense, Multiple Access with Collision Detect (CSMA/CD)**.
 
-* As indicated by the CSMA name, the Ethernet is a multiple-access network, meaning that a set of nodes sends and receives frames over a shared link. You can, therefore, think of an Ethernet as being like a bus that has multiple stations plugged into it. The “carrier sense” in CSMA/CD means that all the nodes can distinguish between an idle and a busy link, and “collision detect” means that a node listens as it transmits and can therefore detect when a frame it is transmitting has interfered (collided) with a frame transmitted by another node.
+* As indicated by the CSMA name, the Ethernet is a multiple-access network, meaning that a set of nodes sends and receives frames over a shared link. You can, therefore, think of an Ethernet as being like a bus that has multiple stations plugged into it. The “carrier sense” in CSMA/CD means that all the nodes can distinguish between an idle and a busy link, and “collision detect” means that a node **listens as it transmits** and can therefore detect when a frame it is transmitting has interfered (collided) with a frame transmitted by another node.
+
+no more description for CSMA/CD
 
 Modern Ethernet links are now largely point to point; that is, they connect one host to an Ethernet switch, or they interconnect switches. As a consequence, the “multiple access” algorithm is not used much in today’s wired Ethernets, but a variant is now used in wireless networks, such as 802.11 networks (also known as Wi-Fi).
 
-#### Physical Properties
+#### 2.6.1 Physical Properties
 * A **transceiver**, a small device directly attached to the tap, detected when the line was idle and drove the signal when the host was transmitting. It also received incoming signals. The transceiver, in turn, connected to an Ethernet adaptor, which was plugged into the host. 
 * Multiple Ethernet segments can be joined together by **repeaters** (or a multi-port variant of a repeater, called a **hub**). A repeater is a device that forwards digital signals, much like an amplifier forwards analog signals; repeaters do not understand bits or frames. No more than four repeaters could be positioned between any pair of hosts, meaning that a classical Ethernet had a total reach of only 2500 m
 
-#### Access Protocol 
+#### 2.6.2 Access Protocol 
  This algorithm is commonly called the **Ethernet’s media access control (MAC)**.It is typically implemented in hardware on the network adaptor.  
  * Frame Format
 

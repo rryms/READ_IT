@@ -9,7 +9,7 @@ subproblems:
 
 ## 3.1 Switching Basics
 add node for medium,
-1. This node would differ from a repeater, which operates on bits, not frames, and just blindly copies the bits received on one interface to another. Instead, this node would fully implement the Ethernet’s collision detection and media access protocols on each interface. 
+1. This node would differ from a repeater(中继器), which operates on bits, not frames, and just blindly copies the bits received on one interface to another. Instead, this node would fully implement the Ethernet’s collision detection and media access protocols on each interface. 
 2. Hence, the length and number-of-host restrictions of the Ethernet, which are all about managing collisions, would not apply to the combined pair of Ethernets connected in this way. This device operates in promiscuous mode, accepting all frames transmitted on either of the Ethernets, and forwarding them to the other.
 
 

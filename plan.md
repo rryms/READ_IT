@@ -49,6 +49,9 @@ It is a mistake to look too far ahead. Only one link in the chain of destiny can
     1. [408](./Note_controller/408/daily_note.md)
     2. [数学](./Note_controller/math/learning_control.md)
 
+## 学习方法
+对所有课程的学习，一定要学会总结，学习东西绝非一蹴而就，总结就是对这个复杂系统的抽象，
+* 408总结
 ### English
 [note](./Note_controller/English/Methods.md)
 * Lonely Reader

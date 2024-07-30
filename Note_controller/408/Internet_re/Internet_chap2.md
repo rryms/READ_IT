@@ -1,6 +1,7 @@
 [Referenced Book](https://book.systemsapproach.org/direct/problem.html)
 
 ## Chap2
+(datalink layer)数据链路层
 these five issues—encoding, framing, error detection, reliable delivery, and access mediation
 
 1. The first is encoding bits onto the transmission medium so that they can be understood by a receiving node. 
@@ -75,9 +76,17 @@ High-Level Data Link Control(HDLC)
 
 ### 2.5 Reliable Transmission
 
+采用确认和超时重传两种机制的可靠传输协议称为自动重传请求(ARQ)
+ARQ协议有三种，停止等待协议、**后退N帧协议和选择重传协议**
+
 #### Stop-and-Wait
 
+
 #### Sliding Window
+连续ARQ协议
+* 后退N帧协议(GBN)
+* 选择重传协议(SR)
+
 
 #### Concurrent Logical Channels
 
@@ -108,6 +117,10 @@ To summarize, an Ethernet adaptor receives all frames and accepts
 
  * Transmitter Algorithm
  the real smarts are implemented at the sender’s side
+ Not coincidentally, every Ethernet frame must be at least 512 bits (64 bytes) long: 14 bytes of header plus 46 bytes of data plus 4 bytes of CRC
+
+Once an adaptor has detected a collision and stopped its transmission, it waits a certain amount of time and tries again. Each time it tries to transmit but fails, the adaptor doubles the amount of time it waits before trying again. This strategy of doubling the delay interval between each retransmission attempt is a general technique known as exponential backoff. More precisely, the adaptor first delays either 0 or 51.2 μs, selected at random. If this effort fails, it then waits 0, 51.2, 102.4, or 153.6 μs (selected randomly) before trying again; this is k × 51.2 for k=0..3. After the third collision, it waits k × 51.2 for k = 0..23 - 1, again selected at random. In general, the algorithm randomly selects a k between 0 and 2n - 1 and waits k × 51.2 μs, where n is the number of collisions experienced so far. The adaptor gives up after a given number of tries and reports a transmit error to the host. Adaptors typically retry up to 16 times, although the backoff algorithm caps n in the above formula at 10.
+
 
 ### 2.7 Wireless Networks
 #### Basic Issues

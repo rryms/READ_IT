@@ -32,7 +32,7 @@ It is a mistake to look too far ahead. Only one link in the chain of destiny can
 数学：线代，一天两章
 微积分，
 
-计算机：数据结构
+计算机：数据结构: 8.2 :tree and map
 计网
 
 英语；

@@ -23,6 +23,7 @@ learning by learning,做到学习一板一眼，但又不是单纯的把单词�
 
 ## 对当下的总结 
 [daily_plan](./daily_plan.md)
+[doing_lonely-reader](./A_brief_history/)
 
 英语的问题
 1. 方法论的迭代

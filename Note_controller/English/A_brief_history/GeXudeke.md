@@ -115,6 +115,25 @@ null
 
 * Pecha Kucha: 20 pages per page 20 seconds
 
+* 怎么设计目标
+  * 细节，主干
+  * 主次
+
+* Paraphrase Output oriented
+  * Titles/Focus Question
+  * mass massage
+    * reduce
+    * preceive
+* Pecha Kucha
+  * Speak  
+    * Output(write)
+      * knowledge
+      * Prereading
+      * logic
+      * methodology
+* 落实过，才有结果
+
+
 ## 160404SXC19【导读课】法国大革命
 
 ## 160407SXC21【阅读课】BT+KWL+AR+Pecha Kucha

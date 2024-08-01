@@ -51,6 +51,7 @@ It is a mistake to look too far ahead. Only one link in the chain of destiny can
 
 ## 学习方法
 对所有课程的学习，一定要学会总结，学习东西绝非一蹴而就，总结就是对这个复杂系统的抽象，
+**有的放矢**地学习：想清楚在学什么，未来怎么发展，用什么方法去学习、发展: when learning GeXu's lecture, i realized that i was not just learning something did know about, but a specific view from the lecture，并非一无所知。
 * 408总结
 ### English
 [note](./Note_controller/English/Methods.md)
@@ -58,7 +59,7 @@ It is a mistake to look too far ahead. Only one link in the chain of destiny can
 * 韦小绿
 #### 背单词，作文，对文意的分析理解
 * 韦小绿---给记单词一个角度
-* 西简--白云、船长的技巧...
+* 西简--白云、船长的技巧...---读西简，练技巧
 
 * add a markdown dedicted to word reminding.
 

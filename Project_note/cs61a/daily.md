@@ -10,8 +10,26 @@ hw01_fin hw02_last-kale
 
 [**lab**](./lab.md)
 
-lab01_fin ; lab02_fin_except_optional : lab04_fin
+lab01_fin ; lab02_fin_except_optional lab3_Review for knowledge, lab04_fin
 
 [**project**](./proj.md)
 
-hog_Problem fin;    
+hog_Problem fin;   
+
+
+## Intro
+
+* A course about managing complexity
+  * Mastering abstraction
+  * Programming paradigms
+
+* An introduction to programming
+  * Full understanding of Python fundamentals
+  * Combining multiple ideas in large projects
+  * How computers interpret programming languages
+
+* Different languages: Scheme & SQL
+
+* A challenging course that will demand a lot of you
+
+[textbook](https://www.composingprograms.com/pages/11-getting-started.html)

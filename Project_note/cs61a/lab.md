@@ -25,3 +25,12 @@ def move_disk(disk_number, form_peg, to_peg):
 def solve_hanoi(n,start)
 ```
 
+## lab04---Recursion, Tree Recursion, Python Lists
+```py
+def recursion():
+    if small cases:
+        return the result
+    else :
+        return recursion(for_a_partition)
+```
+also for string cases

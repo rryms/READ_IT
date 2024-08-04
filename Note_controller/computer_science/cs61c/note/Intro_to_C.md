@@ -2,38 +2,30 @@
 # Intro_to_C
 
 ## Lec_1
-* What you need to know about this class  
-* Thinking about Machine Structures 
-* Great Ideas in Computer Architecture 
-* Number Representation
+### Summary
+* Binary, Decimal, Hex
+* Sign and Magnitude
+* One's Complement
+* Two's Complement  
+* Bias
+* IEC Prefixes
 
-数字的可能：
-  * Binary,Decimal,Hex
-  * Sign and Magnitude
-  * One's Complement
-![lec1-1](../picture/Lec1_1.png)
-  * Two's Complement
-![lec1-2](../picture/Lec1_2.png)
-  * Bias 
-![lec1-3](../picture/Lec1_3.png)
-![lec1-4](../picture/Lec1_4.png)
+Topic on numbers:
+the use of Sign and Magnitude: Hard to achieve in hardware for computing
+One's Complement: to form the negative numbers, flip the bits of the postive form of the number---The MSB represents the sign~~Still hava two zeros~~
+Two's Complement: Flip the bits and add one
 
-  * IEC Prefixes
-![lec1-6](../picture/Lec1_6.png)
-![lec1-5](../picture/Lec1_5.png)
 
 
 ## Lec_2
 * Computer Organization
 * Compile vs. Interpret
 * C vs Java
-* Arrays and Pointers
 
-***why C ***
-![lec2-1](../picture/Lec2_1.png)
-
-***Compilation***
-
+### Intro to C
+**why C**: indelicated to the construction of Computer
+### Compile vs. Interpret
+* ***Compilation***
   * Advantages
     1. Excellent run-time performance: generally much faster than Python or Java for comparable code (because it optimizes for a given architecture)
       * But these days, a lot of performance is in libraries: Plenty of people do scientific computation in python!?!, because they have optimized libraries usually written in C and 99% of the execution takes place in the libraries
@@ -44,69 +36,125 @@
         * And even library versions under Linux.  Linux is so bad we came up with "containers", that effectively ship around whole miniature OS images just to run single programs
 
 
-*** Point Syntax**
-* `int *p;`
-  * Tells complier that ***variable p is address of*** an int
-* `p = &y;`
-  * Tells compiler to assign ***address of y*** to p
-  * `&` called the "address operator" in this context
-* ` z = *p;`
-  * Tells compiler to assign the value at address in p to z 
-  * called the “dereference operator” in this context 
-* `*p = 64; `
-  *  Tells the compiler to assign the value 64 into the memory location pointed to by p
+* C vs.Java
+* Typed Variables in C
+* **Specific Sized Numbers**
+  * ``{u|}int{#}_t``
+    * Whether unsigned
+    * Integer
+    * number of bits {8,16,32,64}
+* Consts and Enums in C
+* Tyed Functions in C
+  * need to declare the return value before declare the function
+  * need to declare the function before the use of function
+* Structs in C
+* C Syntax: main
+  * When start a C program
+    * C executable a.out is loaded into memory by operating system (OS) 
+    * OS sets up stack, then calls into C runtime library, 
+    * Runtime first initializes memory and other libraries, 
+    * then calls your procedure named main()
 
-***Pointers and Structures***
-```c
-typedef struct{
-  int x;
-  int y;
-}Point;
-```
-`Point p1;`
-`Point p2;`
-`Point *paddr;`
-```c
-/* dot notation */
-int h = p1.x;
-p2.y = p1.y;
+* C Syntax : Variable Declaration
+* C Syntax : Control Flow
+* C Syntax : True or False
 
 
-/* arrow notation*/
-int h = paddr->x;
-int h = (*paddr).x;
-
-/* This works too, copies contents of p2 to p1 */
-p1 = p2 ;
-```
-
-![lec2-2](../picture/Lec2_2.png)
 
 ## Lec_3 Pointers, Arrays, Memory(basic idea)
-
+### Conclusion
 * Conclusion on Pointers
   * All data is in memory 
     * Each memory location has an address to use to refer to it and a value stored in it 
   * Pointer is a C version (abstraction) of a data address 
     * `*`“follows” a pointer to its value 
-    * &  gets the address of a value 
+    * `&`  gets the address of a value 
   * C is an efficient language, but leaves safety to the programmer 
     * Variables not automatically initialized 
     * Use pointers with care: they are a common source of bugs in programs
 
-![lec3-2](../picture/Lec3_2.png)
-
-![lec3-1](../picture/Lec3_1.png)
-
-![lec3-3](../picture/Lec3_3.png)
-
-![lec3-4](../picture/Lec3_4.png)
 * And In Conclusion
   * C has three main memory segments in which to allocate data: 
     * Static Data: Variables outside functions
     * Stack: Variables local to function 
     * Heap:  Objects explicitly malloc-ed/free-d. 
   * Heap data is biggest source of bugs in C code
+
+
+ 
+
+### Pointers,Array
+* Address vs. Value
+* Pointers
+  * An address refers to a particular location
+  * Pointer: A variable that contains the address of a variable
+* Types of Pointers
+* NULL Pointers
+* More C Pointer Dangers
+#### Pointers and Structures
+  ```c
+  /* dot notation */
+  int h = p1.x;
+  p2.y = p1.y;
+
+
+  /* arrow notation*/
+  int h = paddr->x;
+  int h = (*paddr).x;
+
+  /* This works too, copies contents of p2 to p1 */
+  p1 = p2 ;
+  p1 = *paddr;
+  ```
+* Pointers in C
+* Pointing to Different Size Objects
+* ``sizeof()``operator
+  * not function, a compile-time operation
+* [Pointer Arithmetic](https://www.geeksforgeeks.org/cpp-pointer-arithmetic/)
+  * Basic rule
+  * *ptr++ Increment the pointer by 1 item then de-reference the memory location it had before incrementing
+  * 
+
+#### Structures
+* Structures Revisited
+* Plus also Unions
+* C Arrays
+* Array Name / Pointer Duality
+  * Array variable is simply a 'pointer' to the first(0th) element
+* Arrays and Pointers
+  * ``a[i] == *(a + i)``
+  * C Array are Very Primitve
+    * the bounds unchecked and the length unknown
+* C Strings
+  * char string[] = "abc";
+  * Last character is followed by 0 byte, written as 0 (the number) or '\0' as a character
+* Use Defined Constants
+* Arrays and Structures and Pointers
+* Concise ``strlen()``
+* Arguments in ``main``
+  * ``int main(int argc, char *argv[])``
+* Endianness
+
+#### C Memory Management
+***Program's address space contains 4 regions***:
+* **stack**: local variables inside functions, grows downward
+* **heap**:  space requested for dynamic data via ``malloc()`` resizes dynamically, grows upward
+* **static data**: variables declared outside functions, does not grow or shrink. Loaded when program starts, can be 
+modified
+* **code**:loaded when program starts, does not change 0x0000 0000 hunk is reserved and unwriteable/unreadable so you crash on null pointer access 
+
+* Where are variables Allocated
+  * inside function;outside function
+  * ``main()`` is treated like a function
+* The Stack
+  * stack frame : Return address,Arguments,Space for local variables
+  * a contiguous blocks of memory
+  * Stack Animation:LIFO data structure
+* Managing the Heap
+  * ``malloc()``
+  * ``calloc()``
+  * ``free()``
+  * ``realloc()``
 
 
 ## Lec_4 :C Memory (Mis)Management

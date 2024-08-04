@@ -7,7 +7,9 @@
 
 善于记笔记，搞清楚自己为啥困顿，比躺着刷手机强
 # Plan it as living
+把要干的想具体，不然就会忘
 每天的计划-----作为整体:本身怎么学，计算机不懂的一定会难受，，，要有切入的角度
+
 发现的问题-----作为局部,在这个切入角度，多感受的总结认识。
 以及在认识中的变化
 做笔记，思维的想法要好好固化，以便反思。
@@ -19,11 +21,23 @@ It is a mistake to look too far ahead. Only one link in the chain of destiny can
 ## daily plan
 做每天的计划，就是要为没有发生的事情进行规划；为实干者指明一条道路
 
+把每天的硬性指标，每天想好，做完就搞别的，规避抓着一个咬死
+
 ![reference](./pictures/2024_7_25_6_19.png)
 
-数学：线代，
-计算机：强化，数据结构,
+数学：线代: chap3.chap4
+计算机：计网：chap3.chap4
+英语：韦小绿:30min;葛旭,方法论总结，
 
+晚上的时候考虑，看一下，葛旭的课，没太多内容；白云的留白天听
+### 具体的想想
+数学：线代，一天两章
+微积分，
+
+计算机：数据结构: 8.2 :tree and map
+计网
+
+英语；
 
 
 ## 计划的规划与切入角度
@@ -34,15 +48,20 @@ It is a mistake to look too far ahead. Only one link in the chain of destiny can
     4. cs162
 
 2. living struggle
-    1. [408](./Note_controller/408/)
+    1. [408](./Note_controller/408/daily_note.md)
     2. [数学](./Note_controller/math/learning_control.md)
 
+## 学习方法
+对所有课程的学习，一定要学会总结，学习东西绝非一蹴而就，总结就是对这个复杂系统的抽象，
+**有的放矢**地学习：想清楚在学什么，未来怎么发展，用什么方法去学习、发展: when learning GeXu's lecture, i realized that i was not just learning something did know about, but a specific view from the lecture，并非一无所知。
+* 408总结
 ### English
+[note](./Note_controller/English/Methods.md)
 * Lonely Reader
 * 韦小绿
 #### 背单词，作文，对文意的分析理解
 * 韦小绿---给记单词一个角度
-* 西简--白云、船长的技巧...
+* 西简--白云、船长的技巧...---读西简，练技巧
 
 * add a markdown dedicted to word reminding.
 
@@ -64,6 +83,8 @@ When reading a bit boring, check a music firmly.快刀斩乱麻
 1. [瓦格纳](https://www.bilibili.com/video/BV1BU4y187ck)
 When inspired, change.
 2. [布鲁克纳](https://www.bilibili.com/video/BV1ez4y1j71w)
+
+* read_it [weread](https://weread.qq.com/)
 
 ## Excited
 来点激情

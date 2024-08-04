@@ -1,6 +1,6 @@
 [toc]
 # Lec1. What is an Operating System?
-[slide](https://inst.eecs.berkeley.edu/~cs162/sp22/static/lectures/1-1up.pdf)
+[slide](./slides/lec1.pdf)
 
 ***Operating Systems are at the Heart of it All***
 * Make the incredible advance in the underlying technology available to a 
@@ -23,7 +23,6 @@ rapidly evolving body of applications
   * Protected access to shared resources
   * Security and authentication
   * Communication
-![lec1-1](./pictures/lec1_1.png)
 
 ## OS Basic
 ### OS Basic: Protection
@@ -66,7 +65,7 @@ rapidly evolving body of applications
   * Look and feel
 
 # Lec2. Four Fundamental OS Concepts
-[slide](https://inst.eecs.berkeley.edu/~cs162/sp22/static/lectures/2-1up.pdf)
+[slide](./slides/lec2.pdf)
 
 ***OS Abstracts Underlying Hardware to help Tame Complexity***
 ![lec2-1](./pictures/lec2_1.png)

@@ -2,3 +2,5 @@
 
 
 Remind the key of the lecture as a mindmap, wished.
+
+Data_struction note on paper, the online note only for the Java Syntax and addtional knowledge for the learning of class

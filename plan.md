@@ -21,13 +21,14 @@ It is a mistake to look too far ahead. Only one link in the chain of destiny can
 ## daily plan
 做每天的计划，就是要为没有发生的事情进行规划；为实干者指明一条道路
 
-把每天的硬性指标，每天想好，做完就搞别的，规避抓着一个咬死
+把每天的**硬性指标**，每天想好，做完就搞别的，规避抓着一个咬死
 
 ![reference](./pictures/2024_7_25_6_19.png)
 
 数学：线代: chap3.chap4
 计算机：计网：chap3.chap4
 英语：韦小绿:30min;葛旭,方法论总结，
+学习的时候，还是搞懂点，沿着考研点走，不行的善于学习又要
 
 晚上的时候考虑，看一下，葛旭的课，没太多内容；白云的留白天听
 ### 具体的想想

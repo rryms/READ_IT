@@ -1,15 +1,39 @@
 # 王道课进程安排
 ## Data Structure
+* 打卡类---划重点
 【腾讯文档】数据结构强化打卡表
 https://docs.qq.com/sheet/DRWpxSFpxY25HcXhG
 
 【腾讯文档】【数据结构应用题】打卡表参考文档
 https://docs.qq.com/doc/DRXNQd3J3TGtYdE9B
+* 课件
+
+链接: https://pan.baidu.com/s/1H_fPLrpBA0ibzAal-0jUmQ?pwd=v2dj 提取码: v2dj 
+--王道25考研【数据结构强化】课件
+* 试题 
+【腾讯文档】25数据结构期中试卷  
+https://docs.qq.com/doc/DRnlMa0lqZVhzbktl
+
+【腾讯文档】25数据结构期中考试答案解析 
+https://docs.qq.com/doc/DRnJoRXlETnZGZ1Fu
+【腾讯文档】数据结构期末考卷
+https://docs.qq.com/doc/DRndIY21XTHh2YWZR
+
+【腾讯文档】数据结构期末考卷及答案解析
+https://docs.qq.com/doc/DRnpMaXZ3TVNockFN
 
 
-
-## OS
 ## Computer Organization
+* 试题
+腾讯文档】计算机组成原理期中试卷   
+https://docs.qq.com/doc/DRmpIdVNLQmRwS3Jk
+
+【腾讯文档】计算机组成原理期中试卷及答案解析   
+https://docs.qq.com/doc/DRnhNU09BS0tOWnJh
+【腾讯文档】计组期末试卷
+https://docs.qq.com/doc/DRmJXYVZXUVVJcGhN
+【腾讯文档】计组期末试卷及答案解析
+https://docs.qq.com/doc/DRnF0RGtlcnVkUEZm
 
 
 

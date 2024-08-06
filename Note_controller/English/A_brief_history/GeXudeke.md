@@ -165,10 +165,19 @@ Resource: Figures, Events--elements
   * read
   * write
 ## 160418SXC24【导读课】对十九世纪的理解+Learning Journal
-50 min 
+50 min ---but 葛旭就是最大的精英主义
+
+learning point -> learning connection
 
 ## 160421SXC25【阅读课】The Great War+Understanding Western Civilization
+阅读方法论实战练习
 
 ## 160425SXC26【导读课】第二次世界大战
-
+null
 ## 160428SXC00【阅读课】全面总结与建议
+* 终极三问： What,Why,How
+* 短文三体： Narration, Description, Argumentation
+* 逻辑三式: Classification, Compare/Contract, Cause/Effect
+* 思维三图： List/Chart/Logic Hierarchy
+* 方法三论: 篇段句词，输出导向，学习日志
+  

@@ -42,3 +42,7 @@ Learn -> Know -> Comprehensive knowledge
 
 Why learning English as a unit?
 如同学习中文，对词的感觉往往是文风的反应，从整体的角度学习英语，把单词当作故事中的角色，有的见的多，有的性格鲜明，有的因为对比认识，更有味道.
+
+## Practice
+### how to solve problems---怎么做题
+做题不会了，不清晰----回归课本，推理一遍,注意取舍差不多得了

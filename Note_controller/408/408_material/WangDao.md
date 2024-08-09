@@ -21,7 +21,16 @@ https://docs.qq.com/doc/DRndIY21XTHh2YWZR
 
 【腾讯文档】数据结构期末考卷及答案解析
 https://docs.qq.com/doc/DRnpMaXZ3TVNockFN
-
+### Advanced DS
+class review
+大题的两种题型
+1. 应用,不用写代码
+2. 算法，代码不好写
+技巧
+* 用输出倒逼输入，不要遍历式复习，做题驱动
+* 大量时间主动吸收---做题，总结，针对复习
+  * 少量时间被动吸收---听基础课
+* 主要研究大题，回顾小题
 
 ## Computer Organization
 * 试题

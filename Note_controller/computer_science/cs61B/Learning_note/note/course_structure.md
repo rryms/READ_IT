@@ -27,11 +27,16 @@ Will talk about Maps, Hashing, and Graphs in much more detail in later lectures.
 
 
 ## Lecture 13: Introduction to Asymptotic Analysis
+### Summary 
+[offical summary]([offical summary](https://sp21.datastructur.es/materials/lectures/lec13/lec13)))
 * Intuitive Runtime
 * Detailed Analysis of Worst Case Order of Growth
 * Simplified Analysis
 * Big Theta Notation
 * Big O Notation
+
+* Summary
+  * $$\ C(x)$$
 
 Efficiency comes in two flavors:
   * Programming cost (course to date. Will also revisit later).
@@ -42,8 +47,18 @@ Efficiency comes in two flavors:
   * Execution cost (from today until end of course).
     * How much time does your program take to execute?
     * How much memory does your program require?
+### Intuitive Runtime Characterizations
+* Techniques for Measuring Computational Cost
 
-![lec13-1](../picture/Lec13_1.png)
+* Asymptotic Behavior
+
+### Worst Case: Order of Growth
+* Simplification Summary
+  1.  Only consider the worst case.
+  2.  Pick a representative operation (a.k.a. the cost model).
+  3.  Ignore lower order terms.
+  4.  Ignore multiplicative constants.
+
 
 ## Lecture 14:Disjoint Sets
 ### Summary
@@ -68,7 +83,9 @@ The ideas that made our implementation efficient:
 
 
 
+
 ## Lecture 15: Asymptotics II Analysis of Algorithms
+### Summary
 * Review of Asymptotic Notation
 * Examples 1-2: For Loops
 * Example 3: A Basic Recurrence
@@ -606,3 +623,29 @@ Two vertices are **connected** if there is a path between them. If all vertices 
 
 ## Lecture 26: Prefix Operations and Tries
 ### Summary
+* Tries
+* Trie Implementation and Performance
+* Alternate Child Tracking Strategies
+* Trie String Operations
+* Autocomplete
+
+## Lecture 25: Range Searching and Multi-Dimensional Data
+## Lecture 26: Prefix Operations and Tries
+## Lecture 27: Software Engineering I
+## Lecture 28: Reduction and Decomposition
+### Summary
+利用已知问题，及数学上的，逻辑上的推演，简化新问题
+[offical-summay]()
+* Topological Sorting 
+* Shortest Paths on DAGs
+* Longest Paths
+* Reductions
+
+### Topological Sorting
+* Simple solution
+  * Simple recursion with indegree 0
+* Reduction
+  * Perform a DFS traversal from every vertex with indegree 0, NOT clearing markings in between traversals.
+    * Record DFS postorder in a list
+    * Topological ordering is given by the reverse of that list (reverse postorder):
+

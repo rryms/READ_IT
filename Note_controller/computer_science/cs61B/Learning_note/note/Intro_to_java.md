@@ -251,31 +251,72 @@ SLLists:来一个数组！！！
 
 ## Lecture 6: DLLists,Arrays
 ### Summary
-[offical summary]
+[offical summary](https://sp21.datastructur.es/materials/lectures/lec5/lec5)
 * Doubly Linked Lists
 * Generic SLLists
 * Arrays
 * Arrays vs. Classes
 
-
-对世界的表述，多方面的思考
-**from SLList $\rightarrow$ DLList**
-对单个item的操作，变为对整体的操作的整合：
-SLList的addList()太慢
-1. add a sential for last
-   * Remove() will be slow!!!
-     * Requires setting 9’s next pointer to null, and point last at the 9 node.
-
-2. DLList
-   取消了单个item的特殊地位：
-   * Non-obvious fact: This approach has an annoying special case: last sometimes points at the sentinel, and sometimes points at a ‘real’ node. 
-   * 用节点来强调它们之间的关系：
-
+### Doubly Linked List(in brief)
+* One Downside of SLLists
+  * Inserting at back
+* Implement 7. Fast operations on last (.last and .prev)
+  * Add backwards links from every node
+    * doubly linked list (DLList) 
+* Doubly Linked List
+  * Double Sentiel
+  * Cricular Sentinel
+* Improvement 8: Fancier Sentinel Nodes
+  * Avoid special cases
+    * Add an additional sentBack sentinel at the end of the list.
+    * Make your linked list circular (highly recommened for project 1), with a single sentinel in the middle.
 
 ### Generic Lists
-**泛型**
+* Integer Only Lists
+* SList
+* Generics
+  * rules
+    * In the .java file **implementing** your data structure, specify your “generic type” only once at the very top of the file.
+    * In .java files that use your data structure, specify desired type once:
+      * Write out desired type during declaration.
+      * Use the empty diamond operator <> during instantiation.
+      * When declaring or instantiating your data structure, use the reference type.
+        * int: Integer
+        * double: Double
+        * char: Character
+        * boolean: Boolean
+        * long: Long
+        * etc.
+### Arrays
+* Getting Memory Boxes
+  * **Arrays** are a special kind of object which consists of a **numbered** sequence of memory boxes.
+  * To get ith item of array A, use A[i].
+  * Unlike class instances which have have **named** memory boxes.
 
-**Array**see the textbook
+* Arrays
+  * Arrays consist of:
+    * A fixed integer length (cannot change!)
+    * A sequence of N memory boxes where N=length, such that:
+      * All of the boxes hold the same type of value (and have same # of bits).
+      * The boxes are numbered 0 through length-1.
+* Array Basics
+* Arraycopy
+
+### 2D Arrays
+* Arrays of Array Addresses
+* Array Boxes can Contain References to Arrays
+ 
+### Arrays vs. Classes
+* Arrays and Classes can both be used to organize a bunch of memory boxes
+  * Array boxes are accessed using [] notation.
+  * Class boxes are accessed using dot notation.
+  * Array boxes must all be of the same type.
+  * Class boxes may be of different types.
+  * Both have a fixed number of boxes.
+* Arrays indices can be computed at runtime
+* Class member variable names CANNOT be computed and used at runtime
+
+对世界的表述，多方面的思考
 
 
 ## Lecture 7: Arrays and Resizing vs. SLists
@@ -290,78 +331,193 @@ SLList的addList()太慢
 61C Preview :Ultra fast random access results from the fact that memory boxes are the same size(in bits)
 Array 是设定抽象是固有的性质，将DList转化为AList，节省时间——抽象的穿刺
 抓住不变量(Invariants)
-:![lec7-1](../picture/Lec7_1.png)
+### A Last Look at Linked Lists
+* Doubly Linked Lists
 
+### Naive Array
+* Random Access in Arrays
+* AList Invariant
+  * The position of the next item to be inserted is always size.
+  * size is always the number of items in the AList.
+  * The last item in the list is always in position size - 1.
+* The Abstract vs. the Concrete
+* ``removeLast``
 
-**Generic ALists**
-![lec7-2](../picture/Lec7_2.png)
-![lec7-3](../picture/Lec7_3.png)
+###  Resizing Arrays
+* Array Resizing
+  * Implementation 
+    * Performance Problem 1: the factor
+    * Performance Problem 2: Memory Efficiency
 
-**Obscurantism in Java**
-![lec7-4](../picture/Lec7_4.png)
-![lec7-5](../picture/Lec7_5.png)
+### Generic ALists
+* When creating an array of references to Glorps:
+  * ``(Glorp []) new Object[cap];``
+  * Causes a compiler warning, which you should ignore.
+* Nulling out Deleted Items
+  * Java only destroys unwanted objects when the last reference has been lost.
+  * Keeping references to unneeded objects is sometimes called loitering.
+  * Save memory. Don’t loiter.
 
+### Obscurantism in Java
 
 
 ## Lecture 8: Interface and Implementation Interitance
+### Summary
 [reading](https://joshhug.gitbooks.io/hug61b/content/chap4/chap41.html)
 * The Problem
 * Hypernyms,Hyponyms, and Interface Inheritance
 * Implementation Inheritance :Default Methods
 * Implementation Inheritance :Extends
-  
+
+* Interface vs. Implementation Inheritance
+  * Interface Inheritance (a.k.a. what):
+    * Allows you to generalize code in a powerful, simple way.
+* Implementation Inheritance (a.k.a. how):
+  * Allows code-reuse: Subclasses can rely on superclasses or interfaces.
+    * Example: print() implemented in List61B.java.
+    * Gives another dimension of control to subclass designers: Can decide whether or not to override default implementations.
+* **Important**: In both cases, we specify “is-a” relationships, not “has-a”.
+  * Good: Dog implements Animal, SLList implements List61B.
+  * Bad: Cat implements Claw, Set implements SLList.
+
+### Problem
+* keep things in order
+* Method Overloading in Java
+  * Java allows multiple methods with same name, but different parameters.
+### Hypernyms, Hyponyms, and Interface Inheritance
+* Hypernyms--对具体的侧面抽象
+* Hyponym --- 对抽象的具体
+* Interface
+  1. Define a reference type for our hypernym (List61B.java).
+  2. Specify that SLLists and ALists are hyponyms of that type.
+
+### Overriding vs. Overloading
+**重写**vs. **超载**
+* Method Overriding
+  * has a method with the exact same signature as in the “superclass”
+* Method Overriding vs. Overloading
+* Overloading
+  * Methods with the same name but different signatures are overloaded.
+  * Adding the ``@Overriding`` 
+    * optional reminder 
+      1. if not override, a compile error
+      2. help remind
+
+### Interface Inheritance
+* Interface Inheritance
+  * Specifying the capabilities of a subclass using the implements keyword is known as interface inheritance.
+    * Specifies what the subclass can do, but not how.
+    * Subclasses must override all of these methods!
+* Copying the Bits
+  *  When you set x = y or pass a parameter, you’re just copying the bits.
+  *  A memory box can only hold 64 bit addresses for the appropriate type.
+  * for subclass, is-a relations can hold the address
+
+### Implementation Inheritance: Default Methods
+* Implementation Inheritance
+  * Java also allows implementation inheritance.
+  * Subclasses can inherit signatures AND implementation.
+  * Use the **default** keyword to specify a method that subclasses should inherit from an **interface**.
+
+* Overriding Default Methods
+
+### Static and Dynamic Type, Dynamic Method Selection
+* Static Type vs. Dynamic Type
+  * Every variable in Java has a “compile-time type”, a.k.a. “static type”.
+    * This is the type specified at declaration. Never changes!
+  * Variables also have a “run-time type”, a.k.a. “dynamic type”.
+    * This is the type specified at instantiation (e.g. when using new).
+    * Equal to the type of the object being pointed at
+
+* Dynamic Method Selection For Overrideen Methods
+
+### Signature Selection, Dynamic Method Selection
+* An Alternate Viewpoint: DMS as a TWO Step
+  1. At compile time: We determine the **signature S** of the method to be called.
+     * S is decided using **ONLY static types**---using the static type to choose function
+     * The signature is the method name and the number and type of its parameters.
+  2. At runtime: The dynamic type of the **invoking object** uses its method with this exact signature S.
+     * By “invoking object”, we mean the object whose method is invoked.
+
+### Practical Inheritance
+### Interface vs. Implementation Inheritance
+* Interface vs. Implementation Inheritance
+* Dangers of Implementation Inheritance
 抽象的层次：
 将SLList与AList整合怎么搞
 1. overload
-   ![lec8-1](../picture/Lec8_1.png)
 2. Interface___overriding
-   ![lec8-2](../picture/Lec8_2.png)
-   ![lec8-3](../picture/Lec8_3.png)
-   ![lec8-4](../picture/Lec8_4.png)
 
-**Default Methods**
-![lec8-7](../picture/Lec8_7.png)
-
-**Static and Dynamic Type, Dynamic Method Selection**
 Interface与基本类型的技术化关联：
-![lec8-5](../picture/Lec8_5.png)
-
-```
-public static void main(String[] args) {
-   List61B<String> someList = new SLList<String>();	
-      someList.addFirst("elk");
-      // someList can contain the address of new SLList...
-}
-``` 
-
-
-![lec8-6](../picture/Lec8_6.png)
  
 
 ## Lecture 9: Extends,Casting,HigherOrderFunction
+### Summary
 [reading](https://joshhug.gitbooks.io/hug61b/content/chap4/chap42.html)
 * Implementation Inheritance :Extends
 * Encapulation
 * Casting
 * Higher Order Functions in Java
+### Implementation Inheritance: Extends
+* The Extends Keyword
+  * If you want one class to be a hyponym of another class, you use extends.
+* Constructor Behavior Is Slightly Weird
+  *  Constructors are not inherited. However, the rules of Java say that **all constructors must start with a call to one of the super class’s constructors**[link](https://docs.oracle.com/javase/tutorial/java/IandI/super.html)
+  * Calling Other Constructors
+    * If you want to use a super constructor other than the no-argument constructor, can give parameters to super.
+    * ```java
+      super(x);
+      deletedItems = new SLList<Item>();
 
+      ```
+* The Object Class
+  * every type in Java is a descendant of the Object class.
+* Is-a vs. Has-a
 利用抽象，区分了层级关系(Abstraction Barriers)：``is-a`` or ``has-a``
-![lec9-1](../picture/Lec9_1.png)
 
-* Extend
-  * Type Check
-  * Casting
-  * Constructores are not Inherited
-  * The Object of class :[what inherited](https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html)
+### Encapsulation
+* Complexity: The Enemy
+  * Hierarchical abstraction
+  * Design for change
+* Modules and Encapsulation
+* Abstraction Barriers
+* Implementation Inheritance Breaks Encapsulation
 
+### Type Checking and Casting
+* Reminder: Dynamic Method Selection
+  * If overridden, decide which method to call based on run-time type of variable.
+* Compile-Time Type Checking
+  * Compiler allows method calls based on compile-time type of variable.
+* Compile-Time Types and Expressions
+
+* Casting
+  * Java has a special syntax for specifying the compile-time type of any expression
+### High Order function
 
 ## Lecture 10: Subtype Polymorphism vs.HoFs
+### Summary
 [reading](https://joshhug.gitbooks.io/hug61b/content/chap4/chap43.html)
 * Dynamic Methods Selection Puzzle
 * Subtype Polymorphism vs. Explicit HoFs
 * Application 1:Comparables
 * Application 2:Comparators
 
+* The rules:
+  * Compiler allows memory box to hold any subtype
+  * Commiler allows calls based on static types
+  * **Overriden non-static methods are seleted at run time based on dynamic type**
+
+### Dynamic Method Selection puzzle
+* Static Type vs. Dynamic Type
+* Static Methods, Variables, and Inheritance
+[doc for hiding](https://docs.oracle.com/javase/tutorial/java/IandI/override.html)
+
+
+
+### Subtype Polymorphism 
+* Subtype Polymorphism vs. Explicit Higher Order Functions
+
+### DIY Comparision
 ### Comparables
 We can create an interface (``Comparable``)that guarantees that any implementing class, like Dog, contains a comparison method, which we'll call ``compareTo``, in order to solve ``>`` for a more generic compire.
 

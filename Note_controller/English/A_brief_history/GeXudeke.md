@@ -1,7 +1,7 @@
 # 葛旭的课
 回忆一下葛旭的言论关于学习的，忘了很多了
 
-
+deep think was recorded in the [file](../../../philosophy/habit/note_taking.md)
 ## 160225SXC04【阅读课】表象-具象-抽象
 
 * 表象-具体-抽象
@@ -135,17 +135,49 @@ null
 
 
 ## 160404SXC19【导读课】法国大革命
+null 
 
 ## 160407SXC21【阅读课】BT+KWL+AR+Pecha Kucha
-
+* Bloom's Taxonomy
+* KWL
+* active reading
+* Pecha-Kucha 
 ## 160411SXC22【阅读课】Project & Resource+Nationalism+Liberalism  
+this lecture is great, illutrating the path of learning
+how to realize the problem
+how to solve the problem connecting with others
 
+Project: knowledge block
+Resource: Figures, Events--elements
+
+认知偏差---落实到纸面上
+学习完--知识块----总结,打包分装---分清主次
+抱佛脚->不抱佛脚的状态
 ## 160414SXC23【阅读课】听说读写+The Making of Logic+超级彩蛋
-
+* Reading-Listening-Speaking-Writing
+* The Making of Logic 
+  * What Why How
+  * Narration/Description/Argumentation 
+  * Classification/Compare-Contrast/Cause-Effect 
+* Be aware of everything around your life
+  * listen
+  * speak
+  * read
+  * write
 ## 160418SXC24【导读课】对十九世纪的理解+Learning Journal
+50 min ---but 葛旭就是最大的精英主义
+
+learning point -> learning connection
 
 ## 160421SXC25【阅读课】The Great War+Understanding Western Civilization
+阅读方法论实战练习
 
 ## 160425SXC26【导读课】第二次世界大战
-
+null
 ## 160428SXC00【阅读课】全面总结与建议
+* 终极三问： What,Why,How
+* 短文三体： Narration, Description, Argumentation
+* 逻辑三式: Classification, Compare/Contract, Cause/Effect
+* 思维三图： List/Chart/Logic Hierarchy
+* 方法三论: 篇段句词，输出导向，学习日志
+  

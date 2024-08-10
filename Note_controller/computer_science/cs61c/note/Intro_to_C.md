@@ -151,10 +151,10 @@ modified
   * a contiguous blocks of memory
   * Stack Animation:LIFO data structure
 * Managing the Heap
-  * ``malloc()``
-  * ``calloc()``
-  * ``free()``
-  * ``realloc()``
+  * ``malloc()`` : allocate a block of uninitialized memory
+  * ``calloc()`` : allocate a block of zeroed memory
+  * ``free()`` : free previously allocated block of memory
+  * ``realloc()`` : change size of previously allocated block
 
 
 ## Lec_4 :C Memory (Mis)Management
@@ -193,5 +193,3 @@ google Buddy memory allocation
 
   
 ## Lec_5 Floating Point
-![lec5-1](../picture/Lec5_1.png)
-![lec5-2](../picture/Lec5_2.png)

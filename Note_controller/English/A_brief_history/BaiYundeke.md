@@ -82,16 +82,15 @@ P5: Conclusion
   * Road map
   * direct answer
   * claim
+  * TS Strong?
+
+Assignment:
+What did the Greeks mean by democracy and in what ways was the Athenian political system a democracy? What effect did the two great conflict of the fifth century B.C --the Persian Wars and the Peloponnesian War--have on Greek cilvilization
 
 
-
-
-
-
-
-
-
-
+* Style
+  * active voice---强调什么
+  * passive voice---
 
 
 ### 160303SXC06【写作课】作业点评+Body Para.+从句

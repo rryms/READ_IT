@@ -13,17 +13,25 @@ Partner project, so try to find a partner soon.
 
 ## Lecture 29: Basic Sorts
 ### Summary
-* The sorting Problem
-* Selection Sort, Heap sort
-* Merge sort
-* Insertion Sort
-* Shell's Sort
+* Goal: Sorting
+* The Sorting Problem
+* Selection Sort
+* Heapsort
+  * Naive Heapsort
+  * In-Place Heapsort
+* Mergesort
+
 ## Lecture 30: Quick Sorts
 ### Summary 
+* Mergesort
 * Insertion Sort
-* Backstory, Partitioning 
+  * Naive Insertion Sort
+  * In-Place Insertion Sort
+  * Insertion Sort Runtime
 * Quicksort
-* Quicksort Performance Caveats and Conclusion
+  * Quick Backstory
+  * Partitioning
+  * Quicksort
 ## Lecture 31: Software Engineering II
 ### Summary
 * Teamwork
@@ -31,10 +39,16 @@ Partner project, so try to find a partner soon.
 * Modular Design
 ## Lecture 32: More Quick Sort, Sorting Summary
 ### Summary
-* Quicksort Flavors vs. Mergesort
-* Selection(Quick Select)
-* Stability, Adaptiveness, and Optimization
-* Shuffling
+* Quicksort
+  * Quicksort Backstory, Partitioning
+  * Quicksort
+* Quicksort Runtime Analsis
+  * Quicksort Runtime Analysis
+  * Avoiding Quicksort Worst Case
+* Quicksort Variants
+  * Philosophies for Avoiding Worst Case Behavior
+  * Quicksort Variant Experiments
+* Quick Select(median finding)
 ## Lecture 33: Software Engineering III
 ### Summary
 * Candy Crush and Friends
@@ -42,9 +56,14 @@ Partner project, so try to find a partner soon.
 * Your Life
 ## Lecture 34: Sorting and Algorithmic Bounds
 ### Summary
-* Sorting Summary
-* Math Problems out of Nowhere
+* Goal: How Hard is Sorting
+* Math Problem Warmup
 * Theoretical Bounds on Sorting
+  * Simple Bounds for TUCS(the ultimate comparison sort)
+  * Coin Puzzles
+  * Puppy Cat Dog
+  * The Sorting Lower Bound
+* Sounds of Sorting
 ## Lecture 35: Radix Sorts
 * Counting Sort
 * LSD Radix Sort 

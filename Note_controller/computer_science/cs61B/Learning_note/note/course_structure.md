@@ -375,29 +375,101 @@ The ideas that made our implementation efficient:
   
 
 ## Lecture 20: Heaps and PQs
-### Summary
-[slide](https://docs.google.com/presentation/d/1ndWjXB4AeFpZlahpfQ9jkH9DiXxcOtzZEEUjOoC8Tm0/edit?usp=sharing)
+### Summary[2024-version](https://docs.google.com/presentation/d/1XVJfoSYH2ItiD1rz9yvyEf_HelejbfkYxQgukbgclSY/edit#slide=id.g2174b714862_0_14)
 [offical summary](https://sp21.datastructur.es/materials/lectures/lec21/lec21)
-* Priority Queues
+* Priority Queue Introduction
+  * Intro the Priority Queue
+  * Using a PQ
+  * Some Bad Implementations
 * Heaps
+  * Heap Definitions
+  * Heap Add
+  * Heap Delete
 * Tree Representations
-* Data Structure Summary
+  * Recursive Representation
+  * Array Representations
+* Priority Queue Summary
+* Data Structures Summary
+
 
 ### Priority Queues
 * The Priority Queue Interface
+```java
+/** (Min) Priority Queue: Allowing tracking and removal of the
+  * smallest item in a priority queue. */
+public interface MinPQ<Item> {
+	/** Adds the item to the priority queue. */
+	public void add(Item x);
+	/** Returns the smallest item in the priority queue. */
+	public Item getSmallest();
+	/** Removes the smallest item from the priority queue. */
+	public Item removeSmallest();
+	/** Returns the size of the priority queue. */
+	public int size();
+}
+/** Specifical Interface to return the small item in set */
+
+```
+* Usage
+  * If only want to perceive the biggest items in a huge numbers items, use PQ to delete the smallest items instead of sort everything
+    * Save the space
+* Bad Implementations
+  * Ordered Array---Bad Performance to sort
+  * Bushy BST---Hard to solve the same items  
+  * HashTable---Also as Bushy BST
 ### Heaps
 * Intro the Heap
   * Binary min-heap:Binary tree that is complete and obeys min-heap property.
     * Min-heap: Every node is less than or equal to both of its children
     * Complete: Missing items only at the bottom level (if any), all nodes are as far left as possible.
-* Heaps' Good
+* Heap Add---Support one property first, and fix other 
+  * Add to end of heap temporarily
+  * Swim up the hierarchy to your rightful place  
+* Heap Delete
+  * Delete min --- the root of the tree
+  * Swap the last items in the heap into the root
+  * The sink your way down the hierarchy, yielding to most qualified folks..
+  * 
 * Heap Operations Summary
 ### Tree Representations
 * Tree Representations
-  * 1a. Fixed Number of Links(one per child)
-  * 1b. Array of child links
-  * 1c. FirstBorn/Sibling Links
-  * 2. Array of Keys, Array Structure
+  * 1a. Fixed Number of Links(one per child)_Create mapping from node to children
+    ```java
+    public class Tree1A<Key>{
+      Key k;
+      Tree1A left;
+      Tree1A middle;
+      Tree1A right;
+      ...
+    }
+    ```
+  * 1b. Array of child links_Create mapping from node to children.
+    ```java
+    public class Tree1B<Key> {
+      Key k; // e.g. 0
+      Tree1B[] children;
+   ...
+   }
+    ```
+  * 1c. FirstBorn/Sibling Links 
+  ```java
+  public class Tree1C<Key> {
+   Key k; // e.g. 0
+   Tree1C favoredChild;
+   Tree1C sibling;
+   ...
+  }
+  ```
+  * 2. Array of Keys, Array Structure_: Store keys in an array. Store parentIDs in an array.
+  ```java
+  public class Tree2<Key>{
+    Key[] keys;
+    int[] parents; // represents the parents' index of current index
+  }
+  public parent(int k){
+    return (k-1)/2;// or just computer it
+  }
+  ```
 
 
 ### Data Structure Summary
@@ -606,12 +678,47 @@ Two vertices are **connected** if there is a path between them. If all vertices 
 * Dijkstra's Algorithm Runtime
 
 ### A*
+加一个变量，减少计算
+**watch the video**
 
 
-## Lecture 24: Minimum Spanning Trees(最小生成树)
+## Lecture 24: Minimum Spanning Trees(最小生成树)---watch it
+### Summary
 * MST, Cut Property, Generic MST Algorithm
 * Prim's Algorithm
 * Kruskal's Algorithm
+
+### Spannign Trees
+* Definition
+  * a **spanning tree** T is a subgraph of G, where T :
+    * Is connected(make it a tree)
+    * acyclic
+    * Includes all of the vertices.(spanning)
+  * A **minimum spanning tree** is a spanning tree of minimum total weight.
+* MST vs. SPT 
+  * the MST sometimes happens to be an SPT for a specific vertex
+* A Useful Tool for Finding the MST: Cut Property
+  * A **cut** is an assignment of a graph’s nodes to two non-empty sets.
+  * A **crossing edge** is an edge which connects a node from one set to a node from the other set.
+  * **Cut property**:Given any cut, minimum weight crossing edge is in the MST.
+* Cut Property in Action
+* Cut Property Proof
+* Generic MST Finding Algorithm
+### Prim's Algorithm
+* Start from some arbitrary start node.
+  * Repeatedly add shortest edge (mark black) that has one node inside the MST under construction.
+  * Repeat until V-1 edges.
+* Prim's vs. Dijkstra's
+* Prim's Implementation
+* Prim's Algotithm Runtime
+### Kruskal's Algorithm
+* Initially mark all edges gray.
+  * Consider edges in increasing order of weight.
+  * Add edge to MST (mark black) unless doing so creates a cycle
+  * Repeat until V-1 edges.
+
+
+
 ## Lecture 25: Range Searching and Multi-Dimensional Data
 ### Summary
 * Multi-Dimensional Data
@@ -620,6 +727,44 @@ Two vertices are **connected** if there is a path between them. If all vertices 
   * QuadTrees for 2D Data
   * KdTrees for Higher Dimensional Data
   * Uniform Partitioning
+### Range-Finding and Nearest
+* Search Trees
+    * Binary Search Tree
+    * 2-3 Tree/ 2-3-4 Tree/ B-Tree
+    * Red Black Tree
+  * support very fast operations
+    * Requires that compariable data
+    * Use ``Comparable`` interface 
+* Expanding the Power of our Set
+* Implementing Fancier Set Operations with a BST
+* Sets and Maps on 2D Data
+### Multi-dimensional Data
+* Building Trees of Two Dimensional Data
+* Spatial Partitioning/ Rectangle Intersection Interpretation
+### QuadTrees
+* The QuadTree
+  * Every Node has four children
+* QuadTree Range Search 
+* 
+### Higher Dimensional Data
+* 3D Data
+* Even Higher Dimensional Space
+* K-d Trees
+* K-d Trees and Nearest Neighbor
+* Nestest Pseudocode
+### Uniform Partitioning
+### Summary and Applicaitons
+* Multi-Dimensional Data Summary
+* Set operations can be more complex than just contains, e.g.:
+Range Finding: What are all the objects inside this (rectangular) subspace?
+Nearest: What is the closest object to a specific point?
+Note: Can be generalized to k-nearest.
+
+The most common approach is **spatial partitioning**:
+Quadtree: Generalized 2D BST where each node “owns” 4 subspaces.
+K-d Tree: Generalized k-d BST where each node “owns” 2 subspaces.
+Dimension of ownership cycles with each level of depth in tree.
+Uniform Partitioning: Partition space into uniform chunks.
 
 ## Lecture 26: Prefix Operations and Tries
 ### Summary
@@ -629,9 +774,20 @@ Two vertices are **connected** if there is a path between them. If all vertices 
 * Trie String Operations
 * Autocomplete
 
-## Lecture 25: Range Searching and Multi-Dimensional Data
-## Lecture 26: Prefix Operations and Tries
+* Tries Summary
+
+### Tries
+* Abstract Data Types vs. Specific Implementations
+* BST and Hash Table Set Runtimes
+* 
+### Tries Implementation and Performance
+### Alternate Child Tracking Strategies
+### Trie String Operations
+### Autocomplete
+
+
 ## Lecture 27: Software Engineering I
+
 ## Lecture 28: Reduction and Decomposition
 ### Summary
 利用已知问题，及数学上的，逻辑上的推演，简化新问题
@@ -647,5 +803,18 @@ Two vertices are **connected** if there is a path between them. If all vertices 
 * Reduction
   * Perform a DFS traversal from every vertex with indegree 0, NOT clearing markings in between traversals.
     * Record DFS postorder in a list
-    * Topological ordering is given by the reverse of that list (reverse postorder):
+    * Topological ordering is given by the reverse of that list (reverse postorder)
+* better topological algorithm:
+  * Run DFS from an arbitrary vertex.
+  * If not all marked, pick an unmarked vertex and do it again.
+  * Repeat until done.
+* Directed Acyclic Graphs
+  * A topological sort only exists if the graph is a directed acyclic graph (DAG).
 
+### Shortest Paths on DAGs
+
+### Longest Paths
+* A Note on "Mathematical Maturity"
+  * [wiki](https://en.wikipedia.org/wiki/Mathematical_maturity)
+
+### Reduction

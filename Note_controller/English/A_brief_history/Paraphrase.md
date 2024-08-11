@@ -19,8 +19,22 @@ Louis made a elaborate government system for his private life and state governin
 Louis kept incessant wars during his region until complete his idea of hero, but only have a litte reward and keep enamies around.
 
 * The Decline of Spain
-
+Spain that hold almost whole south Amerifa and was populous in Europe, had already lost its wealth.
+Until Philip III, the weakneess of Spain came to apparently and the uncontrolled state drove Spain into deep.
+Internal revolts and foreign defeats ends the any illusions about Spain's greatness
 ### Absolutism in Central and Eastern Europe
+* The German States
+After Wars, the Holy Roman left the comprising states autonomous and sovereign, two state rose as powers in Europe: Prussia and Austria 
+Prussia was a small state without bounds, its leader realizing the state constructed a populous army to expand territory.
+After the expand of territory and the rising of powers, Prussia was be elected as a king.
+* The Emergence of Austria
+The Austria leaders has been the emperors of the Holy Roman who played an important role to European Politics.
+After the thrity years' war, Austria sustained its land as a local power.
+After the defeat of Ottoman power, Austria hold a considerable land and was a main power in the Northeastern Europe in 17th century.
+* Russia: From Fledgling Pricipality to Major Power
+
+
+
 ### Limited Monarchy: The Dutch Republic and England
 
 ## Chap_16

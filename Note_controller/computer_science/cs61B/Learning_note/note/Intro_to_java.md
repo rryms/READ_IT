@@ -492,77 +492,222 @@ Interface与基本类型的技术化关联：
 
 * Casting
   * Java has a special syntax for specifying the compile-time type of any expression
-### High Order function
-
-## Lecture 10: Subtype Polymorphism vs.HoFs
-### Summary
-[reading](https://joshhug.gitbooks.io/hug61b/content/chap4/chap43.html)
-* Dynamic Methods Selection Puzzle
-* Subtype Polymorphism vs. Explicit HoFs
-* Application 1:Comparables
-* Application 2:Comparators
-
-* The rules:
-  * Compiler allows memory box to hold any subtype
-  * Commiler allows calls based on static types
-  * **Overriden non-static methods are seleted at run time based on dynamic type**
 
 ### Dynamic Method Selection puzzle
 * Static Type vs. Dynamic Type
 * Static Methods, Variables, and Inheritance
 [doc for hiding](https://docs.oracle.com/javase/tutorial/java/IandI/override.html)
+* The rules:
+  * Compiler allows memory box to hold any subtype
+  * Commiler allows calls based on static types
+  * **Overriden non-static methods are seleted at run time based on dynamic type**
 
 
 
-### Subtype Polymorphism 
-* Subtype Polymorphism vs. Explicit Higher Order Functions
+### High Order function
 
-### DIY Comparision
-### Comparables
+## Lec 10: Subtype Polymorphism vs.HoFs 
+### Summary
+[reading](https://joshhug.gitbooks.io/hug61b/content/chap4/chap43.html)
+* Building a General Max Function
+  * The Naive Approach
+  * OurComparable
+  * Compilation Error Puzzle
+  * Comparable
+* Comparators
+To summarize, interfaces in Java provide us with the ability to make callbacks. Sometimes, a function needs the help of another function that might not have been written yet (e.g. max needs compareTo). A callback function is the helping function (in the scenario, compareTo). In some languages, this is accomplished using explicit function passing; in Java, we wrap the needed function in an interface.
+
+### High Order Function vs. Explicit Subtype Polymorphism
+* Subtype Polymorphism
+  * Polymorphism: “providing a single interface to entities of different types
+  *  when call ``deque.addFirst()``, the actual behavior is based on the dynamic type
+  *  Java automatically selects the right behavior using what is sometimes called “dynamic method selection”.
+
+### Building a Gerneral Max Function
+-----Something are comparable to compare with others
+* The Naive Approach
+  * Goal: The One True Max Function that returns max of any array regardless of type 
+    * Objects cannot be compared to other objects with ``>``
+    * Specifical Comparation on Dog---Not Generic
+* OurComparable
+  * Creat an interface that guarantees a comparison method
+    * Have Dog implement this interface.
+    * Write Maximizer class in terms of this interface.
+  ```java
+  public interface OurComparable{
+    /** Return negative number if this < o.
+     * Return 0 if equals
+     * Return postive if ...
+    */
+    public int compareTo(object o);
+  }
+  public class Dog implements OurComparable {
+   private String name;
+   private int size;
+    @overrided
+   /** Returns <0 if this dog is less than the dog pointed at by o, and so forth. */
+   public int compareTo(Object o) {
+       Dog uddaDog = (Dog) o;
+       return this.size - uddaDog.size;
+   }
+  }
+  public class Maximizer{
+    public static OurComparable max(Ourcomparable[] a){
+    }
+  }
+  ```
+  * Benefits 
+    * No need for array max
+    * Code that operates on multiple types (mostly) gracefully
+* Compilation Error Puzzle
+* Comparable
+  * Two issue
+    * Awkward casting to/from Objects
+    * Not Generic
+      * No existing classes implement OurComparable (e.g. String, etc).
+      * No existing classes use OurComparable (e.g. no built-in max function that uses OurComparable)
+  * Comparable Advantages
+    * Lots of built in classes implement Comparable (e.g. String).
+    * Lots of libraries use the Comparable interface (e.g. Arrays.sort)
+    * Avoids need for casts.
+### Comparators
+--- A comparative machine
+* Additional Orders in Java
+  * standard Java approach: Create ``SizeComparator`` and ``NameComparator`` classes that implement the ``Comparator`` interface.
+  * code
+    ```java
+    public class Dog implements Comparable<Dog>{
+      private String name;
+      private int size;
+      public static class NameComparator implements Comparator{
+        public int compare(Dog d1, Dog d2){
+          return d1.name.compareTo(d2.name);
+        }
+      }
+    }
+    Comparator<Dog> cd = new Dog.NameComparator();
+    if(cd.compare(d1,d3) > 0){
+      d1.bark();
+    }else{
+      d3.bark();
+    }
+    ``` 
+
 We can create an interface (``Comparable``)that guarantees that any implementing class, like Dog, contains a comparison method, which we'll call ``compareTo``, in order to solve ``>`` for a more generic compire.
 
 We'll take advantage of an interface that already exists called Comparable. Comparable is already defined by Java and is used by countless libraries. 
 
 ### Comparator
 What if we'd like to sort Dogs in a different way than their natural ordering, such as by alphabetical order of their name? 
-```java   
-public interface Comparator<T> {
-    int compare(T o1, T o2);
-} 
-``` 
 To do this, we can simply defer to String's already defined compareTo method. 
-
-### Summary
-To summarize, interfaces in Java provide us with the ability to make callbacks. Sometimes, a function needs the help of another function that might not have been written yet (e.g. max needs compareTo). A callback function is the helping function (in the scenario, compareTo). In some languages, this is accomplished using explicit function passing; in Java, we wrap the needed function in an interface.
-
-
 
 
 ## Lecture 11: Exception,Iterators,Object Methods
-* Lists and Sets
-* Exceptions
+### Summary
+* **Today’s Goal: ArraySet**
 * Iteration
-* toString and Equals
+  * The Enhanced For Loop
+  * iterator, next, hasNext
+  * iterator, next, hasNext for ArraySet
+  * Iterable
+* Object Methods
+  * ``==`` vs. ``equals``
+  * toString
+  * Better toString (Bonus)
+  * .of (Bonus)
 
-```java
-Set<String> s = new HashSet<>();
-...
-for(String city : s ){
-  ....
-}
-// the code translates to :
+### Iteration
+* The Enhanced For Loop
+  * Java allows us to iterate through Lists and Sets using a convenient shorthand syntax sometimes called the “foreach” or “enhanced for” loop.
+* iterator,next, hasNext
+  * The enhanced for loop works by first calling the ``.iterator`` method of the object.
+  * The ``Interator`` interface has its own API for fetching values one-by-one:
+    * hasNext: Tells us whether there are more values.
+    * next: gets the next value.
+  * How Iteration Really works
+    * In that case, we can iterate with either of the two equivalent pieces of code.
+    * Left code is shorthand for right code.
+    ```java
+    /** short hands for iterator */
+     for(int x : javaset){
+      System.out.println(x); 
+     }
+    /** the completed version*/
+    Iterator<Integer> seer = javaset.iterator();
+    while (seer.hasNext()){
+      int x = seer.next();
+      System.out.println(x);
+    }
+    ```
+* Implementation
+  ```java
+  public class ArraySet<T> {
+   /** returns an iterator (a.k.a. seer) into ME */
+   public Iterator<T> iterator() {
+       return new ArraySetIterator();
+   }
 
-Set<String> s = new HashSet<>();
-...
-Iterator<String> seer = s.iterator();
-while (seer.hasNext()){
-  String city = seer.next();
-  ...
-}
+   private class ArraySetIterator implements Iterator<T> {
+       private int wizPos;
 
-```
+       public ArraySetIterator() {
+           wizPos = 0;
+       }
 
+       public boolean hasNext() {
+           return wizPos < size;
+       }
+
+       public T next() {
+           T returnItem = items[wizPos];
+           wizPos += 1;
+           return returnItem;
+       }
+   }
+  }
+
+  ``` 
+* Iterable
+  * ``implements Interable<T>``tell that the class was iterable and a iterator inside to use
+  * 
 ### Object Methods
-``equals()`` and ``==`` have different behaviors in Java. ``==`` Checks if two objects are actually the same object in memory. Remember, pass-by-value! ``==`` checks if two boxes hold the same thing. For primitives, this means checking if the values are equal. For objects, this means checking if the address/pointer is equal.
+* All classes are hyponyms of Object.
+* ``toString()`` 
+  * The toString() method provides a string representation of an object.
+    * System.out.println(Object x) calls x.toString() 
+    [println](https://github.com/AdoptOpenJDK/openjdk-jdk11/blob/999dbd4192d0f819cb5224f26e9e7fa75ca6f289/src/java.base/share/classes/java/io/PrintStream.java#L896) [String.valueOf](https://github.com/AdoptOpenJDK/openjdk-jdk11/blob/f0ef2826d2116f4e0c0ed21f8d54fe9d0706504e/src/java.base/share/classes/java/lang/String.java) which calls toString
+  * The [implementation of ``toString()`` in object](https://github.com/AdoptOpenJDK/openjdk-jdk11/blob/999dbd4192d0f819cb5224f26e9e7fa75ca6f289/src/java.base/share/classes/java/lang/Object.java#L245) is the the name of the class, then an @ sign, then the memory location of the object.
+  * implements
+    ```java
+      @Override
+      public String toString() {
+      StringBuilder returnSB = new StringBuilder("{");
+      for (int i = 0; i < size; i += 1) {
+       returnSB.append(items[i]);
+       returnSB.append(", ");
+      }
+      returnSB.append("}");
+      return returnSB.toString();
+      }
+
+    ``` 
+* == vs. equals
+  ``equals()`` and ``==`` have different behaviors in Java. ``==`` Checks if two objects are actually the same object in memory. Remember, pass-by-value! ``equals()`` checks if two boxes hold the same thing. For primitives, this means checking if the values are equal. For objects, this means checking if the address/pointer is equal.
+  * ``this``: Address of Current Object
+  * ``instanceOf`` Demo
+    * Checks to see if o’s dynamic type is Dog (or one of its subtypes).
+      * If no, returns false.
+      * If yes, returns true and casts o into a variable of static type Dog called uddaDog.
+      * Works correctly, even if o is null.
+      ```java
+      @override 
+      public boolean equals(Object o){
+        if(o instanceof Dog uddaDog){
+          return this.size == uddaDog.size;
+        }
+        return false;
+      }
+      ```
+      
 
 

@@ -54,7 +54,8 @@ It is a mistake to look too far ahead. Only one link in the chain of destiny can
 
 ## 学习方法
 对所有课程的学习，一定要学会总结，学习东西绝非一蹴而就，总结就是对这个复杂系统的抽象，
-**有的放矢**地学习：想清楚在学什么，未来怎么发展，用什么方法去学习、发展: when learning GeXu's lecture, i realized that i was not just learning something did know about, but a specific view from the lecture，并非一无所知。
+学习的时候，感觉到困难就是自己没想清楚，下面的计划。
+干累了，就要想好换什么，不仅要想好，更一定要换！！！
 * 408总结
 ### English
 [note](./Note_controller/English/Methods.md)
@@ -81,6 +82,10 @@ now A very strong feelings that 真正无所事事的正是无所事事本身：
 怎么刷题——对这些东西的优先级——切入的角度要有清楚的认识。
 
 When reading a bit boring, check a music firmly.快刀斩乱麻
+其实该想想要听什么：promote your study
+* 王道的强化
+* 数学--梦言
+* 英语--孤阅
 1. [瓦格纳](https://www.bilibili.com/video/BV1BU4y187ck)
 When inspired, change.
 2. [布鲁克纳](https://www.bilibili.com/video/BV1ez4y1j71w)

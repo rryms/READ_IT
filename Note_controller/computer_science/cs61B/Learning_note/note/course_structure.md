@@ -134,6 +134,9 @@ The ideas that made our implementation efficient:
 * Rooted Trees and Rooted Binary Trees
 * Binary Search Trees
   * A binary search tree is a rooted binary tree with the BST property.
+    Every key in the left subtree is less than X’s key.
+    Every key in the right subtree is greater than X’s key.
+
 
 ### BST Operstion: Search
 * Finding a searchKey in a BST
@@ -429,7 +432,6 @@ public interface MinPQ<Item> {
   * Delete min --- the root of the tree
   * Swap the last items in the heap into the root
   * The sink your way down the hierarchy, yielding to most qualified folks..
-  * 
 * Heap Operations Summary
 ### Tree Representations
 * Tree Representations

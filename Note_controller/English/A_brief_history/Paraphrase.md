@@ -32,9 +32,27 @@ The Austria leaders has been the emperors of the Holy Roman who played an import
 After the thrity years' war, Austria sustained its land as a local power.
 After the defeat of Ottoman power, Austria hold a considerable land and was a main power in the Northeastern Europe in 17th century.
 * Russia: From Fledgling Pricipality to Major Power
-
-
-
+Before The region of Peter the Great, Russia was in a short period of internal confilction and left society class highly stratified, but the upheaval of 17th century also opened a contact between Russia and Europe.
+Peter the Great well educated by the west culture was dedicted to Europeanize Russia from the culture to the society, for which he constructed a armed force to acquire the road to connect the west.
+From the religion to the government, Peter the Great centralized the power and reformed the state to a important actor on the European stage. 
+* The Limits of Absolutism
+The rulers didn't achieved a completed control of their state for which many state was highly effected by the local noble.
 ### Limited Monarchy: The Dutch Republic and England
-
-## Chap_16
+* The Golden Age of the Dutch Republic
+After revolt of Netherland, seven states form a unity as the core of the modorn Dutch in the seventeenth century.
+After the forming of the Dutch, there was internal dispute between the powerful leader representing for monarch and the represitive for the public in which the external war functioned the result of competation.
+The growth of the Dutch came from the econmic prosperity as a carrier of trade, but war bring the econmic decline of the Dutch. 
+* England and the Emergence of Constitutional Monarchy
+The authority of England was struggled with disagreements between king representing the monarch and the Parliament as the limited monarch, for which the cause of this situation was religion and profit.
+James II, a affirmlly Catholic, dedicted to turn the England to monarch, after the birth of his son, was exposed to French by the Parliament treating by the shadow of a Catholic hereditary monarch.
+The elected king William was propelled to agree a bill of right resulting a form of a constitutional monarchy.
+* Argments from Hobbes and Locke
+Hobbes stands the upheaval of England political struggle approved a sovereign authority who stands as a construction of society.
+Locke rather endored a limited government which was in change of common people
+### The Flourishing of European Culture
+## Chap_16 Toward A New Heaven and A New Earth: The Scientific Revolution and The Emergence of Modern Science
+a lots of achievements
+## Chap_17 The Eighteenth Century: An Age of Enlightenment
+### The Enlightenment
+### Culture and Society in the Enlightment
+### Religion and the Churches

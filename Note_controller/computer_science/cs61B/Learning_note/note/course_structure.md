@@ -29,15 +29,21 @@ Will talk about Maps, Hashing, and Graphs in much more detail in later lectures.
 ## Lecture 13: Introduction to Asymptotic Analysis
 ### Summary 
 [offical summary]([offical summary](https://sp21.datastructur.es/materials/lectures/lec13/lec13)))
-* Intuitive Runtime
-* Detailed Analysis of Worst Case Order of Growth
-* Simplified Analysis
-* Big Theta Notation
-* Big O Notation
+* Goal: Measuring Code Efficiency
+* Intuitive Runtime Characterizations
+  * Clock Time
+  * Exact Operation Counting
+  * Exact Count Exercise
+* Asymptotic Analysis
+  * Why Scaling Matters
+  * Computing Worst Case Order of Growth (Tedious Approach)
+  * Computing Worst Case Order of Growth (Simplified Approach)
+* Asymptotic Notation
+  * Big Theta (a.k.a. Order of Growth)
+  * Big O and Big Omega
 
-* Summary
-  * $$\ C(x)$$
 
+## Measuring Code Efficiency
 Efficiency comes in two flavors:
   * Programming cost (course to date. Will also revisit later).
     * How long does it take to develop your programs?
@@ -48,18 +54,55 @@ Efficiency comes in two flavors:
     * How much time does your program take to execute?
     * How much memory does your program require?
 ### Intuitive Runtime Characterizations
-* Techniques for Measuring Computational Cost
+* Goal: **characterize the runtimes** of the functions below
+  * Characterize should be **simple** and **mathematically rigorous**
+  * should demonstrate superiority of different Algorithms.
+* Clock Time---Measure execution time in seconds using a client program.
+  * Pro&Cons: 
+    * Easy to measure, obviously
+    * Being effectively by too many situations
+* Exact Operation Counting
+  * Tech 2A:Count possible operations for an array of size N = 10,000.
+    * Pro&Cons
+      * Machine indenpendent.
+      * Tedious to compute.
+  * Tech 2B: Count possible operations in terms of input array size N.
+    * Pro&Cons
+      * Machine indenpendent.
+      * more tedious to compute
+### Asymptotic Analysis
+* Why Scaling Matters
+  * Comparing Algorithms
+  * Asymptotic Behavior
+    * In most cases, we care only about asymptotic behavior
+  * Scaling Across Many Domains
+    * refer the "shape" of a runtime function as its **order of growth**
+* Computing Worst Case Order of Growth (Tedious Approach)
+  * to achieve a simple and mathematically rigorous characterization
+    1. Consider Only the Worst Case(have exception)
+    2. Elimite low order terms
+    3. Eliminate multiplicative constants
+      Ignore any coefficients
+    4. Combine all operations
+      Treat all operations as taking "1 unit of time"
+* Computing Worst Case Order of Growth (Simplified Approach)
+  * Simplified Analysis Process
+    * Treat anything that takes constant time (relative to N) as a single operation
+    * Figure out the order of growth for the count of that operation by either:
+      * Making an exact count, then discarding the unnecessary pieces.
+      * Using intuition and inspection to determine order of growth (only possible with lots of practice).
 
-* Asymptotic Behavior
-
-### Worst Case: Order of Growth
-* Simplification Summary
-  1.  Only consider the worst case.
-  2.  Pick a representative operation (a.k.a. the cost model).
-  3.  Ignore lower order terms.
-  4.  Ignore multiplicative constants.
-
-
+### Asymptotic Notation
+* Big Theta(a.k.a Order Of Growth)
+  * Using “Big-Theta” instead of “order of growth” does not change the way we analyze code at all.
+  * Formal Definition
+    $$\ R(N) \in \Theta(N) $$ means there exist positive constants $k_1$ adn $k_2$ such that: $$k_1 * \ f(N) \leq  R(N) \leq k_2 * f(N) $$ for all values of N greater than some $N_0$
+* Big O and Big Omega
+  * Whereas Big Theta can informally be thought of as something like “equals”, Big O can be thought of as “less than or equal” and Big Omega can be thought of as "greater than or equal"
+  * Defination _ Big O
+    $$ R(N) \in O(f(N))$$ means there exists a positive constant $k_2$ such that $$R(N) \leq k_2 * f(N)$$ for all values of N greater than some $N_0$ 
+  * Defination _ Big Omega
+    $$ R(N) \in \Omega(f(N)) $$ means there exists a positive constant $k_1$ such that:$$k_1 * f(N) \leq R(N)$$ for all values of N greater than some $N_0$
 ## Lecture 14:Disjoint Sets
 ### Summary
 [offical summary]()
@@ -84,13 +127,28 @@ The ideas that made our implementation efficient:
 
 
 
-## Lecture 15: Asymptotics II Analysis of Algorithms
+## Lecture 15: Asymptotics II Analysis of Algorithms -- a deep introduction of analysis 
 ### Summary
-* Review of Asymptotic Notation
-* Examples 1-2: For Loops
-* Example 3: A Basic Recurrence
-* Example 4: Binary Search
-* Example 5: Mergesort
+* Nested For Loops
+* There is No Magic Shortcut for Asymptotic Analysis
+* Amortized Analysis
+* Recursive Analysis
+* Binary Search (Intuitive)
+* Binary Search (Exact) (Bonus Video)
+* Mergesort
+
+Theoretical analysis of algorithm performance requires careful thought.
+  * There are no magic shortcuts for analyzing code.
+  * In our course, it’s OK to do exact counting or intuitive analysis.
+    * Know how to sum 1k+2k+...+Nk and k0+k1+...+kN.
+    * We won’t be writing mathematical proofs in this class.
+  * Many runtime problems you’ll do in this class resemble one of the five problems from today. See textbook, study guide, and discussion for more practice.
+  * This topic has one of the highest skill ceilings of all topics in the course, and is a modern research topic
+Different solutions to the same problem, e.g. sorting,  may have different runtimes.
+  * $N^2$ vs.$ N log N$ is an enormous difference.
+Going from $N log N$ to $N$ is nice, but not a radical change.
+Once you prove runtime for one problem, you may be able to use it in other problems to speed things up!
+
 
 ## Lecture 16: ADTs and BSTs
 ### Summary

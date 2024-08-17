@@ -11,7 +11,7 @@ Lots more design practice.
 You’ll decide your own task and approach.
 Partner project, so try to find a partner soon.
 
-## Lecture 29: Basic Sorts
+## Lecture 29: Sorting I: Selection Sort, Heapsort
 ### Summary
 * Goal: Sorting
 * The Sorting Problem
@@ -59,7 +59,7 @@ Partner project, so try to find a partner soon.
 * Heapsort Runtime
 
 
-## Lecture 30: Quick Sorts
+## Lecture 30: Sort II: Mergesort and Insertion Sort
 ### Summary 
 * Mergesort
 * Insertion Sort
@@ -127,7 +127,7 @@ Partner project, so try to find a partner soon.
 * Teamwork
 * Cast Study in Complexity: Build Your own world
 * Modular Design
-## Lecture 32: More Quick Sort, Sorting Summary----watch it
+## Lecture 32:Sort III: Quicksort----watch it
 ### Summary
 * Quicksort
   * Quicksort Backstory, Partitioning
@@ -174,13 +174,25 @@ Partner project, so try to find a partner soon.
 * Radix Sorts
   * LSD Radix Sort
   * MSD Radix Sort
+### Sorting Stability
+* Sorting Stability
+  A sort is said to be stable if order of equivalent items is preserved.
+* Optimizing Sorts
+  * Additional tricks 
 ### Counting Sort
+* The Key Idea:
+  * Avoid compriation items
 * Implementing
   * Count number of occurrences of each item.
   * Iterate through list, using count array to decide where to put everything.
 * Runtime
 
-## Lecture 36: Sorting and Data Structures Conclusion
+### Radix Sorts
+* LSD Radix Sort(Least Significant Digit)
+  * Non-comparison based sorting algorithms that proceed digit-by-digit are called “Radix Sorts”.
+  * LSD Runtime
+* MSD Radix Sort
+## Lecture 36: Sorting VI: Radix vs. Comparison Sorting
 * An Intuitive, Analytical, and Empirical look at Radix vs. Comparison Sorting
 * The Just-in-Time Compiler
 * Radix Sorting Integers
@@ -214,3 +226,4 @@ Partner project, so try to find a partner soon.
 ## Lecture 40: Wrapping Thing UP
 * What have Done :61B
 * Moving Forwards
+  

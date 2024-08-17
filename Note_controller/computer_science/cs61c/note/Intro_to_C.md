@@ -139,8 +139,7 @@ Two's Complement: Flip the bits and add one
 ***Program's address space contains 4 regions***:
 * **stack**: local variables inside functions, grows downward
 * **heap**:  space requested for dynamic data via ``malloc()`` resizes dynamically, grows upward
-* **static data**: variables declared outside functions, does not grow or shrink. Loaded when program starts, can be 
-modified
+* **static data**: variables declared outside functions, does not grow or shrink. Loaded when program starts, can be modified
 * **code**:loaded when program starts, does not change 0x0000 0000 hunk is reserved and unwriteable/unreadable so you crash on null pointer access 
 
 * Where are variables Allocated
@@ -155,19 +154,31 @@ modified
   * ``calloc()`` : allocate a block of zeroed memory
   * ``free()`` : free previously allocated block of memory
   * ``realloc()`` : change size of previously allocated block
-
-
+* [detail for functions](../slide/lec04.pdf)
 ## Lec_4 :C Memory (Mis)Management
 [lec-slide](../slide/lec04.pdf)
-* Managing the Heap_(前置知识)
-  * Strings...
-    * And Constant Strings...
-    * String & Character Function
-    * Alignment, Packing, & Structures..
-  * C unions
-    * How to Use Unions...
-  * Structure Layout In Memory
+### Managing the Heap_(前置知识)
+* Strings
+  * Strings_message
+    * Strings as Array
+    * multiple pointers
+    * copy strings
+      1. The length of string, allocate 
+      2. ``strcpy(a,b)``or`` ``strncpy(a,b,strlen(b) + 1)``
+  * Constant Strings
+    * Anything you put explicitly in quotes becomes a **constant** string
+    * For efficiency, these strings are stored as read only global variables
+    *  undefined behavior to write to a constant string
+  * String & Character Functions
+  * Strings are just
+  * And Constant Strings...
+  * String & Character Function
+  * Alignment, Packing, & Structures..
+* C unions
+  * How to Use Unions...
+* Structure Layout In Memory
     * Alignment,Packing, & Structure...
+    * Default Alignment Rules
   * Pointer Ninjitsu
     * Pointers to arrays of structures
     * Accessing that array...

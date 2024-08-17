@@ -1,1 +1,6 @@
 # Reminder
+### Packages
+Part of this project is using packages to separate logic and functionality. At the end of the project, you’ll have two packages: the deque **package** that provides an implementation of the Deque data structure, and the **gh2** package that implements a synthesizer used to play guitar hero. You should already see folders with these names in the starter code, and your job is to implement them. Let’s look at the specifics for what a package really is.
+
+A package is a collection of Java classes that all work together towards some common goal. We’ve already seen packages in CS 61B without knowing it. For example, org.junit is a package that contains various classes useful for testing, including our familiar Assert class, which contains useful static methods like assertEquals. In other words, when we saw org.junit.Assert.assertEquals, the org.junit was the package name, Assert was the class name, and assertEquals was the method name. We call org.junit.Assert.assertEquals the “canonical name” of the method, and we call assertEquals the “simple name” of the method.
+Typically, package names are the internet address of the entity writing the code, but backwards. For example, the JUnit library is hosted at ``junit.org``, so the package is called ``org.junit``.

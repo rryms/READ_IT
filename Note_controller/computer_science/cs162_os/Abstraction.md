@@ -1,7 +1,35 @@
 [toc]
 # Lec1. What is an Operating System?
 [slide](./slides/lec1.pdf)
-
+## Summary
+* OS 
+  * Provide convenient abstractions to handle diverse hardware
+    * Convenience, protection, reliability obtained in creating the illusion
+  * Coordinate resources and protect users from each other
+     * Using a few critical hardware mechanisms
+  * Simplify application development by providing standard services
+  * Provide fault containment, fault tolerance, and fault recovery
+  * CS162 combines things from many other areas of computer science:
+     * Languages, data structures, hardware, and algorithms
+* Definiton
+  * Not universal
+    * Everything a vendor ships when you order an operating system” is good approximation
+    * the **Kernel**
+      * running at all times on the computer
+### OS function
+* Referee
+  * Manage protection, isolation, and sharing of resources
+    * Resource allocation and communication
+* Illusionist
+  * Provide clean, easy-to-use abstractions of physical resources
+    * Infinite memory, dedicated machine
+    * Higher level objects: files, users, messages
+    * Masking limitations, virtualization
+* Glue 
+  * Common services
+  * Storage, Window system, Networking
+  * Sharing, Authorization
+  * Look and feel
 ***Operating Systems are at the Heart of it All***
 * Make the incredible advance in the underlying technology available to a 
 rapidly evolving body of applications
@@ -133,8 +161,10 @@ rapidly evolving body of applications
    * Communicates with another program
 ![lec2-5](./pictures/lec2_5.png)
 question here!!!
-### Multiplexing and Protection
-#### Simple Protection: Base and Bound(B&B)_three versions
+### Protections
+#### Paged Virtual Address Space
+Hardware translates address using a **page table**
+
 
 
 ## Third OS Concept: Process
@@ -143,24 +173,33 @@ question here!!!
    * Owns memory (address space)
    * Owns file descriptors, file system context, ...
    * Encapsulate one or more threads sharing process resources
-* Application program executes as a process
+  * Application program executes as a process
    * Complex applications can fork/exec child processes [later!]
-* Why processes? 
-   * Protected from each other!
-   * OS Protected from them
-   * Processes provides memory protection
-* Fundamental tradeoff between protection and efficiency
-   * Communication easier withina process
-   * Communication harder between processes
+  * Why processes? 
+    * Protected from each other!
+    * OS Protected from them
+    * Processes provides memory protection
+  * Fundamental tradeoff between protection and efficiency
+    * Communication easier withina process
+    * Communication harder between processes
 
-### Single and Multithreaded Processes
-* Threads encapsulate concurrency:
-   * “Active” component
-* Address spaces encapsulate protection:
-   * “Passive” component
-   * Keeps buggy programs from crashing the system
-### Additional Layers of Protection for Modern Systems
-#### Protection and Isolation
+* Single and Multithreaded Processes
+  * Threads encapsulate concurrency:
+    * “Active” component
+  * Address spaces encapsulate protection:
+    * “Passive” component
+    * Keeps buggy programs from crashing the system
+  * Reason for multiple threads
+    * Parallelism: Take advantages of hardware resource
+    * Concurrency: Easy handle with other events as Interrupts
+* Protection and Isolation
+  * Process necessarity:
+    * Reliability
+    * Security and privacy
+    * Fairness(shares of memory)
+  * Mechanisms
+    * Address translation
+    * Hardware must support **privilege levels**
 
 ## Fourth OS Concept: Dual Mode Operation
 * **Hardware** provides at least two modes (at least 1 mode bit):
@@ -186,9 +225,22 @@ question here!!!
   * Resume
 ### Process Control Block
 
-# Lec3. Processes, System Calls, and Fork
+# Lec3. Abstractions 1: Threads and Processes A quick,programmer's viewpoint 
+Processes, System Calls, and Fork
 [slide](https://inst.eecs.berkeley.edu/~cs162/sp22/static/lectures/3-1up.pdf)
 ### Conclusion
+* Threads are the OS unit of concurrency
+  * Abstraction of a virtual CPU core
+  * Can use pthread_create, etc., to manage threads within a process
+  * They  share data $\rightarrow$ need synchronizaƟon to avoid data races
+* Processes consist of one or more threads in an address space
+  * Abstraction  of the machine: execution environment for a program
+  * Can  use fork, exec, etc. to manage threads within a process
+* We  saw the role of the OS library
+  * Provide API to programs
+  * Interface  with the OS to request services
+
+
 * Process: execution environment with Restricted Rights
    * Address Space with One or More Threads
    * Owns memory (address space)
@@ -202,17 +254,22 @@ question here!!!
    * Fork, Exec, Wait, Signal
 
 ### Running Many Programs
-* We have the basic mechanism to 
-  * switch between user processes and the kernel, 
-  * the kernel can switch among user processes,
-  * Protect OS from user processes and processes from each other
+  * We have the basic mechanism to 
+    * switch between user processes and the kernel, 
+    * the kernel can switch among user processes,
+    * Protect OS from user processes and processes from each other
 
-### Multiplexing Processes: The Process Control Block
-* Kernel represents each process as a process control block (PCB)
-* Kernel Schedulermaintains a data structure containing the PCBs
-* Give out non-CPU resources
+* Multiplexing Processes: The Process Control Block
+  * Kernel represents each process as a process control block (PCB)
+  * Kernel Schedulermaintains a data structure containing the PCBs
+  * Give out non-CPU resources
  ![lec3-1](./pictures/lec3_1.png)
+* Scheduler
+  * Mechanism for deciding which processes/threads receive hardware CPU time, when, and for how long
 
+
+### Simultaneous Multithreading/Hyperthreading
+* Hard
 ### Is Base and Bound a Good-Enough Protection Mechanism?
 
 ### Recall: 3 types of Kernel Mode Transfer

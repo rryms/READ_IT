@@ -54,5 +54,39 @@ Locke rather endored a limited government which was in change of common people
 a lots of achievements
 ## Chap_17 The Eighteenth Century: An Age of Enlightenment
 ### The Enlightenment
+* The Paths to Enlightenment---Backgroud
+The Enlightenment was a combination of religions and the idealism of reason for which intelluals who emphasis on the knowledge of external world as an understanding of God.
+In England, Newton's law of Nation bring a connection of reason and God which indected the exception of nature increased the New skepticism of religion and the development of secularization.
+The exploration of outland gave intelluals the idea of pure "natural man"
+* The Philosphes and Their ideas
+  * Montesquieu(孟德斯鸠) and Political Thought 
+  The separation of right of executive, legislative, judicial powers for which the state would kept limiting and controling each other, providing the greatest freedom and security for a state
+  * Voltaire(伏尔泰) and the Enlightenment
+  Voltaire born in a prosperous middle class family, known for his denunciations to religion and advocation for denism
+  * Diderot(狄德罗) and the Encyclopedia
+  The Encyclopedia, the most important contribution of Diderot, was acting as a weapon of intellucals to against the religions.
+  * Toward a New "Science of Man"
+    Adam Smith --- economic liberalism
+* The Social Environment of the Philosophes----Jean-Jacques Rousseau
+Rousseau's classic, the Origins of the Inequality of Mankind, The Social Contrast described the development of mankind socialtiy and provocate construction of government stands for all spective of humanbeing.
+Rousseau's 
+* The Social Environment of the Philosophes
+Salon, as the center of intelluals to communicate each other, effected the process of the Enlightenment.
+
 ### Culture and Society in the Enlightment
+* Innovations in Art, Music, and Literature
+In 1730s, A new style called Rococo began to affect the perform of art, which emphasize on grace and gentle action.
+The development of Music was charming, for which Handel, Bach, Haydn and Mozart composed their ethical classics. 
+* The High Culture of the Eighteenth Century
+* Popular Culture  ---here
+* Crime and Punishment
 ### Religion and the Churches
+* The Institutional Church
+* Toleration and Religious Minorities
+* Popular Religion in the Eighteenth Century
+
+## Chap_18 The Eightenment Century: European States, International Wars, And Social Change
+### The European States
+### Wars and Diplomacy
+### Economic Expansion and Social Change
+### The Social Order of the Enlightenment Century

@@ -94,7 +94,11 @@ What did the Greeks mean by democracy and in what ways was the Athenian politica
 
 
 ### 160303SXC06【写作课】作业点评+Body Para.+从句
+#### [Body Para](https://writingcenter.unc.edu/tips-and-tools/paragraphs/)
+#### 从句
+* view the subsentence as describe word to the main sentence
 ### 160310SXC07【写作课】对比-比较式写作
+#### [Compare & Contract](https://writingcenter.unc.edu/tips-and-tools/comparing-and-contrasting/)
 ### 160317SXC09【写作课】选词与酌句
 ### 160324SXC15【写作课】Cause-Effect+阅读学写作
 

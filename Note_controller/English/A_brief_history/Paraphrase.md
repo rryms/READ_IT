@@ -78,6 +78,7 @@ Salon, as the center of intelluals to communicate each other, effected the proce
 In 1730s, A new style called Rococo began to affect the perform of art, which emphasize on grace and gentle action.
 The development of Music was charming, for which Handel, Bach, Haydn and Mozart composed their ethical classics. 
 * The High Culture of the Eighteenth Century
+High Culture represents the culture relaxing alites and nobals
 * Popular Culture  ---here
 * Crime and Punishment
 ### Religion and the Churches

@@ -434,8 +434,9 @@ Once you prove runtime for one problem, you may be able to use it in other probl
 * The Separate Chaining Data Index Array
 * Separate Chaining Performance
   
+## Lecture 20: Hashing II
 
-## Lecture 20: Heaps and PQs
+## Lecture 21: Heaps and PQs
 ### Summary[2024-version](https://docs.google.com/presentation/d/1XVJfoSYH2ItiD1rz9yvyEf_HelejbfkYxQgukbgclSY/edit#slide=id.g2174b714862_0_14)
 [offical summary](https://sp21.datastructur.es/materials/lectures/lec21/lec21)
 * Priority Queue Introduction
@@ -539,7 +540,7 @@ public interface MinPQ<Item> {
 
 
 
-## Lecture 21: Tree and Graph
+## Lecture 22: Tree and Graph
 ### Summary 
 [offical summary](https://sp21.datastructur.es/materials/lectures/lec23/lec23)
 * Tree Traverals
@@ -547,7 +548,7 @@ public interface MinPQ<Item> {
 * Depth First Search 
 * Breadth First Search
 
-* Graphs are a more general idea than a tree.
+* Graphs are a more **general** idea than a tree.
   * A tree is a graph where there are no cycles and every vertex is connected.
   * Key graph terms: Directed, Undirected, Cyclic, Acyclic, Path, Cycle.
 
@@ -578,7 +579,7 @@ public interface MinPQ<Item> {
   * Preorder Traversal for printing directory listing
   * Postorder Traversal for gathering file sizes
 
-### Graphs
+### Graphs --- more generic without constriction
 * Trees and Hierarchical Relationships
 * Graph Definition
   * A set of nodes.
@@ -601,6 +602,15 @@ Two vertices are **connected** if there is a path between them. If all vertices 
 
 ### Graph Problems
 * Graph Queries More Theoretically
+  * **s-t Path**:Is there a path between vertices s and t?
+  * **Connectivity**:Is the graph connected, i.e. is there a path between all vertices?
+  * **Biconnectivity**. Is there a vertex whose removal disconnects the graph?
+  * **Shortest s-t Path**. What is the shortest path between vertices s and t?
+  * **Cycle Detection**. Does the graph contain any cycles?
+  * **Euler Tour**. Is there a cycle that uses every edge exactly once?
+  * **Hamilton Tour**. Is there a cycle that uses every vertex exactly once?
+  * **Planarity**. Can you draw the graph on paper with no crossing edges?
+  * **Isomorphism**. Are two graphs isomorphic (the same graph in disguise)?
 * Graph Problem Difficulty
 
 ### Depth-First Traveral
@@ -614,26 +624,29 @@ Two vertices are **connected** if there is a path between them. If all vertices 
   * This idea of exploring a neighbor’s entire subgraph before moving on to the next neighbor is known as Depth First Traversal.
 * The Power of Depth First Search
   * computes a path to every vertex.
+  * Find a path from s to every other reachable vertex, visiting each vertex at most once.
 ### Tree vs. Graph Traversals
 * Tree Traversals
 * Graph Traversals
-  * DFS Preorder
+  * DFS Preorder: **Action** is **before** **DFS** calls to neighbors.
   * DFS Postorder
   * BFS order: Act in order of distance from s.
     * breadth first search
 
 
-## Lecture 22: Graph Traversals and Implementations
+## Lecture 23: Graph Traversals and Implementations
 [slide](https://docs.google.com/presentation/d/1v5pLls6n5weicMenk_CXxNVC-9O-Uic1usRQYrdxBN0/edit?usp=sharing)   
 [offical summary](https://sp21.datastructur.es/materials/lectures/lec24/lec24)
 ### Summary
-* BreadthFirstPaths
-* Graph API
-* Graph Representations and Graph Algorithm Runtimes
-* Graph Traversal Runtimes
-* Layers of Abstraction
-
-* BSF : Uses a queue instead of recursion to track what work needs to be done.
+* The All Paths Problem
+  * Princeton Graphs API
+  * DepthFirstPaths Implements
+  * The Adjacency List
+  * Depth First Paths Runtime
+* The All Shortest Paths Problem
+  * BreadthFirstPaths
+  * BreadthFirstPaths Implementation
+* Graph Implementations and Runtime
 
 * Graph API: We used the Princeton algorithms book API today.
   * This is just one possible API. We’ll see other APIs in this class.
@@ -672,10 +685,22 @@ Two vertices are **connected** if there is a path between them. If all vertices 
 * Graph Printing Runtime
 
 * Graph Representations
-* 
+*  
 ### Graph Traversal Implementation and Runtime
 ### Layers of Abstraction
 * how API influence the performance
+  * Runtime 
+  * Memory usage
+  * Difficulty of implementing various graph algorithms
+```java
+public  class Graph {
+  public Graph(int V); // Creat empty graph with v vertices
+  public void addEdge(int v, int w); //add an edge v-w
+  Iterable<Integer> adj(int v);  // vertice adjacent to v
+  int V(); //number of vertices
+  int E(); //number of edges
+}
+```
 
 ## Lecture 23: Shortest Paths
 ### Summary
@@ -718,10 +743,12 @@ Two vertices are **connected** if there is a path between them. If all vertices 
   * While PQ is is not empty:
     * p = PQ.removeSmallest()
     * Relax all edges from p
-* **Relaxing** an edge p → q with weight w:
+* **Relaxing** an edge p $\rightarrow$ q with weight w:
 * If distTo[p] + w < distTo[q]:
   distTo[q] = distTo[p] + w
+
   edgeTo[q] = p
+  
   PQ.changePriority(q, distTo[q])
 * key invariants:
   * edgeTo[v] is the best known predecessor of v.

@@ -1,4 +1,8 @@
+# plan
+注意精读，还是粗读，怎么粗读
+
 # Webster's vocabulary builder
+
 call back
 1\1\2\3\5---10min quickly-review
 one day one unite.
@@ -10,29 +14,29 @@ one day one unite.
 * unit5---7.1---8.9
 * unit6---7.1---8.9
 * unit7---7.1---8.14
-* unit8---7.26
-* unit9---7.31
-* unit10--8.5
-* unit11--8.5 
-* unit12--8.9
-* unit13--8.12
+* unit8---7.26--
+* unit9---7.31--
+* unit10--8.5---
+* unit11--8.5---
+* unit12--8.9---
+* unit13--8.12--
 * unit14--8.13--8.14
 * unit15--8.14--8.17      
 * unit16--8.16--8.17    
 * unit17--8.17--8.19    
 * unit18--8.18--8.19
-* unit19--8.19
-* unit20--8.20
-* unit21
-* unit22
-* unit23
-* unit24
-* unit25
-* unit26
-* unit27
-* unit28
-* unit29
-* unit30
+* unit19--8.19--8.26
+* unit20--8.20--8.26
+* unit21--8.21--8.26
+* unit22--8.22--8.26
+* unit23--8.22--8.26
+* unit24--8.22--8.28
+* unit25--8.22--8.28
+* unit26--8.23--8.24
+* unit27--8.23--8.24
+* unit28--8.23--8.24
+* unit29--8.23--8.24
+* unit30--8.23--8.24
 
 
 

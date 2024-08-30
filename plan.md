@@ -1,4 +1,5 @@
 # Think it
+浪费时间的绝对是自己的问题，回顾好自己的进度，想好，效率不高，think it and solve it.
 最根本的行动指南 --- the joy of learning--- 要有情绪对学习！！！勇敢探索。学习最高的效率不是无意义的劳作，而是情绪中对知识的探索，对这种探索的一再思索与重现即是科学
 
 干事情,永远要与世界打交道,就首先要有入世的心,认识到自己的位置。用明白世界如此发展,但就是要决然去闹个明明白白的闯劲。一方面,要理解世界变化万千，另一方面,自身决然入世的这一股劲就更重要了。
@@ -19,9 +20,14 @@
 积极的自我暗示，学着变化，会安排好这些
 It is a mistake to look too far ahead. Only one link in the chain of destiny can be handled at a time.
 
+## Combination of Learning and the Internet
+### ipad
+* Goodnote for the textbook
+* notability for the note-taking
 
 ## daily plan
 * the block of knowledge --- 有情绪的学习，体会到其中层次，完成一块，就搞搞别的调整状态
+怎么做笔记，学的时候一定是梗概，随便记记总结，有个总体的认识，做题，逐步深化，到晚上，再细致的总结
 做每天的计划，就是要为没有发生的事情进行规划；为实干者指明一条道路
 
 把每天的**硬性指标**，每天想好，做完就搞别的，规避抓着一个咬死
@@ -35,15 +41,11 @@ It is a mistake to look too far ahead. Only one link in the chain of destiny can
 学习的时候，还是搞懂点，沿着考研点走，不行的善于学习又要
 
 晚上的时候考虑，看一下，葛旭的课，没太多内容；白云的留白天听
-### 具体的想想
-数学：线代，一天两章
-微积分，
+### the block of knowledge
+知识块---体系，怎么结合手段达到目的
+1. CS--- 看王道，补知识点，环绕王道指导，考研知识点
 
-计算机：数据结构: 8.2 :tree and map
-计网
-
-英语；
-
+cs162 与考研不是前后项，不要因噎废食，每天想好计划，天天搞
 
 ## 计划的规划与切入角度
 1. Future plan

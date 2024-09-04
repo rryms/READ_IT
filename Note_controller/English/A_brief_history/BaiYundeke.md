@@ -200,7 +200,15 @@ Bad Sentence
 4. 抄词典---have a differ with Define a concept
     词典---客观事实---非主观
 
+
+* 句子仿写
+  * 锻炼语法，句子的组成
+  * per charpter 20 sentences 仿写 
+
 ### 160324SXC15【写作课】Cause-Effect+阅读学写作
+
+
+
 
 ### 160331SXC15【写作课】笔记+查资料+细节处理+复合句
 

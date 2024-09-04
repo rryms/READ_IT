@@ -6,6 +6,7 @@
 call back
 1\1\2\3\5---10min quickly-review
 one day one unite.
+每天3个unit, take advantage of memory review of unit
 
 * unit1---7.1---8.1
 * unit2---7.1---8.5 
@@ -14,10 +15,10 @@ one day one unite.
 * unit5---7.1---8.9
 * unit6---7.1---8.9
 * unit7---7.1---8.14
-* unit8---7.26--
-* unit9---7.31--
-* unit10--8.5---
-* unit11--8.5---
+* unit8---7.26--8.30
+* unit9---7.31--8.30    
+* unit10--8.5---9.2
+* unit11--8.5---9.2
 * unit12--8.9---
 * unit13--8.12--
 * unit14--8.13--8.14

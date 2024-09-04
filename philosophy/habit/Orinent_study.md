@@ -35,3 +35,15 @@
 
 ## 调整状态
 * 每天困了吧唧的，喝咖啡
+
+# 虚假状态(周而自省之)
+* 培根四幻象
+  * 种族假象
+  * 洞穴假象
+  * 市场假象
+  * 剧场假象
+## 对学习假象的批判
+* 学习的时候，没有着眼于知识，而仅仅想着用一种方法去学习
+  * when learning cs162, in fact learning with slide in advance you already have a good acknowledge of os. But to emphesis on the video block the target of learning knowledge.
+  * 行动的决心并不意味着无知的行动
+    * 学习一个东西要有一个整体的把握--只缘身在此山中---一个多方面的认识不是坏处，把握好度---横看成林侧成峰

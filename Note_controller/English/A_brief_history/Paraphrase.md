@@ -1,3 +1,13 @@
+## Chap_7 The Passing of the Roman World and the Emergence of Medieval Civilization
+### Transformation of the Roman World: The Role of the Germanic Peoples
+### The Role and Development of the Chirstian Church
+### The Byzantine Empire 
+## Chap_8 European Civilization in the Early Milldle Ages, 750-1000
+### The world of the Carolingians
+### Disintegration of the Carolingian Empire
+### The Emerging World of Lords and Vassals
+### The Zenith of Byzantine Civilization
+
 ## Chap_15 State Building and The Search For Order In The Seventeenth Century
 ### Social Crises, War, and Rebelliions
 * The Witchcraft Hysteria

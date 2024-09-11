@@ -206,7 +206,26 @@ Bad Sentence
   * per charpter 20 sentences 仿写 
 
 ### 160324SXC15【写作课】Cause-Effect+阅读学写作
+改作文比写作文，更有效率
+#### Assignment
+1. How do you account for the spread of the Reformation?
+2. The Outline --- no.12
+3. 精读，词义,细读学写作
+#### Cause-Effect
+* 现象---intro  
+  * cause 1--- bodygraph  
+  * cause 2
+  * cause 3
+* conclusion
 
+#### 造句
+* 近义词 ---同义替换，用词多样性
+* 意思---在查字典时，细化单词的差异与要表达的明确的意思 
+* divide word into combaning serval special meaning's words
+  * effective
+    * useful and productive
+  * view
+    * perceive and acknowlegde ---渐进的过程
 
 
 

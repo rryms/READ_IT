@@ -33,3 +33,7 @@ math 不要着急，知识点，做题，总结。
 [Linear_Algerbra](https://www.bilibili.com/video/BV1sH4y1S7gm)
 
 [ODE](https://www.bilibili.com/video/BV1mT411M7yj)
+
+* Lianbs
+
+[Randoms]()

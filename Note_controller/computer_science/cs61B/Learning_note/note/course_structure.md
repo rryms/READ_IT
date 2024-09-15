@@ -855,20 +855,37 @@ Uniform Partitioning: Partition space into uniform chunks.
 
 ## Lecture 26: Prefix Operations and Tries
 ### Summary
-* Tries
-* Trie Implementation and Performance
-* Alternate Child Tracking Strategies
-* Trie String Operations
-* Autocomplete
+When your key is a string, you can use a Trie:
+  * Theoretically better performance than hash table or search tree.
+  * Have to decide on a mapping from letter to node. Three natural choices:
+    * DataIndexedCharMap, i.e. an array of all possible child links.
+    * Bushy BST.
+    * Hash Table.
+  * All three choices are fine, though hash table is probably the most natural.
+  * Supports special string operations like longestPrefixOf and keysWithPrefix.
+    * keysWithPrefix is the heart of important technology like autocomplete
+    * Optimal implementation of Autocomplete involves use of a priority queue!
+Bottom line: Data structures interact in beautiful and important ways!
 
-* Tries Summary
 
 ### Tries
-* Abstract Data Types vs. Specific Implementations
-* BST and Hash Table Set Runtimes
-* 
-### Tries Implementation and Performance
+* the word indexed store has good performance
+* Special Case 1: Character Keyed Map
+  * Store each letter of the string as a node in a tree
+  * have great performance on 
+    * get
+    * add
+    * special string operations
+### Trie Implementation and Performance
+* to charify the word and the letter of the part of word
+  * The first approach:
+    * Each node stores a letter, a map from c to all child nodes, and a color.
+* make room for every possible letters
+  * Each DataIndexedCharMap is an array of 128 possible links, mostly null.
 ### Alternate Child Tracking Strategies
+* A view of abstruct
+  * the functionary of the layer of word is just provide the Key and the Next address.
+    * Use BST or Hash Table instead.
 ### Trie String Operations
 ### Autocomplete
 

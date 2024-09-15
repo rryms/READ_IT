@@ -1,5 +1,6 @@
 # plan
 注意精读，还是粗读，怎么粗读
+每天在读的英文中，挑10个句子仿写   
 
 # Webster's vocabulary builder
 
@@ -8,8 +9,8 @@ call back
 one day one unite.
 每天3个unit, take advantage of memory review of unit
 
-* unit1---7.1---8.1
-* unit2---7.1---8.5 
+* unit1---7.1---8.1--9.11
+* unit2---7.1---8.5--9.11
 * unit3---7.1---8.7
 * unit4---7.1---8.7
 * unit5---7.1---8.9

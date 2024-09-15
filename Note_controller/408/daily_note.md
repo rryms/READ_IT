@@ -1,4 +1,5 @@
 # daily plan
+* [beokayy_](https://space.bilibili.com/16113747)
 
 ## 怎么学
 ### Internet

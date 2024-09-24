@@ -52,3 +52,25 @@ now A very strong feelings that 真正无所事事的正是无所事事本身：
   * when learning cs162, in fact learning with slide in advance you already have a good acknowledge of os. But to emphesis on the video block the target of learning knowledge.
   * 行动的决心并不意味着无知的行动
     * 学习一个东西要有一个整体的把握--只缘身在此山中---一个多方面的认识不是坏处，把握好度---横看成林侧成峰
+
+# thinking
+浪费时间的绝对是自己的问题，回顾好自己的进度，想好，效率不高，think it and solve it.
+最根本的行动指南 --- the joy of learning--- 要有情绪对学习！！！勇敢探索。学习最高的效率不是无意义的劳作，而是情绪中对知识的探索，对这种探索的一再思索与重现即是科学
+
+干事情,永远要与世界打交道,就首先要有入世的心,认识到自己的位置。用明白世界如此发展,但就是要决然去闹个明明白白的闯劲。一方面,要理解世界变化万千，另一方面,自身决然入世的这一股劲就更重要了。
+考研：一天的学习，缺少把这个活动看成一个科学地去把握合理安排,不断去变化,去安排去认识,去实践的能力。
+满脑子知识,却动不动就玩会儿,学习需要两种人格：灯下黑的远眺者与埋头苦干以至于时常搞不清楚方向的实干家。
+远眺者盘算着未来包括我当下的思索,而实干者就是要在广袤的土地上学会脚踏实地地耕耘,用心去把握谷物的生长,顺着远眺者的计划,日起而作,日落而息。
+
+善于记笔记，搞清楚自己为啥困顿，比躺着刷手机强
+# Plan it as living
+把要干的想具体，不然就会忘
+每天的计划-----作为整体:本身怎么学，计算机不懂的一定会难受，，，要有切入的角度
+
+发现的问题-----作为局部,在这个切入角度，多感受的总结认识。
+以及在认识中的变化
+做笔记，思维的想法要好好固化，以便反思。
+
+
+积极的自我暗示，学着变化，会安排好这些
+It is a mistake to look too far ahead. Only one link in the chain of destiny can be handled at a time.

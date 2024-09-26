@@ -57,7 +57,7 @@ Finish cs61c before nju_ics, not absolutely. Practice in reality.
 怎么调和好
 
 
-## [Feelings](./philosophy/habit/修身养性.md)
+## [厚积薄发](./philosophy/habit/修身养性.md)
 
 
 When reading a bit boring, check a music firmly.快刀斩乱麻

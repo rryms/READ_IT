@@ -4,12 +4,8 @@
 ### ipad
 * Goodnote for the textbook
 * notability for the note-taking
-
 ## daily plan
-* the block of knowledge --- 有情绪的学习，体会到其中层次，完成一块，就搞搞别的调整状态
-怎么做笔记，学的时候一定是梗概，随便记记总结，有个总体的认识，做题，逐步深化，到晚上，再细致的总结
-做每天的计划，就是要为没有发生的事情进行规划；为实干者指明一条道路
-
+学的时候，把笔记本拿出来，想想
 把每天的**硬性指标**，每天想好，做完就搞别的，规避抓着一个咬死
 学习的时候，还是搞懂点，沿着考研点走，不行的善于学习又要
 
@@ -65,12 +61,3 @@ When reading a bit boring, check a music firmly.快刀斩乱麻
 * 王道的强化
 * 数学--梦言
 * 英语--孤阅
-1. [瓦格纳](https://www.bilibili.com/video/BV1BU4y187ck)
-When inspired, change.
-2. [布鲁克纳](https://www.bilibili.com/video/BV1ez4y1j71w)
-
-* read_it [weread](https://weread.qq.com/)
-
-## Excited
-来点激情
-[SHOSTAKOVICH](https://www.bilibili.com/video/BV1Hx411W7uj?p=11)

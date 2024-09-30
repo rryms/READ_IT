@@ -74,3 +74,7 @@ now A very strong feelings that 真正无所事事的正是无所事事本身：
 
 积极的自我暗示，学着变化，会安排好这些
 It is a mistake to look too far ahead. Only one link in the chain of destiny can be handled at a time.
+
+* the block of knowledge --- 有情绪的学习，体会到其中层次，完成一块，就搞搞别的调整状态
+怎么做笔记，学的时候一定是梗概，随便记记总结，有个总体的认识，做题，逐步深化，到晚上，再细致的总结
+做每天的计划，就是要为没有发生的事情进行规划；为实干者指明一条道路

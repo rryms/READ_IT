@@ -1,4 +1,8 @@
 水滴石穿
+# [learning control]
+
+[概率论大观](https://www.bilibili.com/video/BV1FN41177AD)
+
 # watch it
 看一下究竟：
 1. [one variable integerate25考研｜一元积分计算大观]( https://www.bilibili.com/video/BV1jgayeoEGy/?share_source=copy_web&vd_source=c0f224789c5516d8576f3dd9deb8b8df) 
@@ -8,3 +12,5 @@
 
 # kaoyan math
 [爆看--梦言](https://www.bilibili.com/video/BV1YT421i7SB/?p=60&share_source=copy_web&vd_source=c0f224789c5516d8576f3dd9deb8b8dfa)--提供角度---差不多算是强化了
+
+* [概率]

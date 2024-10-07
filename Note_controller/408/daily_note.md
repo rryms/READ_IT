@@ -1,5 +1,6 @@
 # daily plan
 * [beokayy_](https://space.bilibili.com/16113747)
+* [Computer Network ---key book](https://book.systemsapproach.org/foreword.html)
 
 ## 怎么学
 ### Internet
@@ -9,3 +10,4 @@ book just a reference, that helps to conprehends the mind-map
 * 整理思路，最应该的就是把boakeyy的课听完整理好自己的思路
   * 算法推算类的，纸上
   * 总结，markdown
+

@@ -49,8 +49,6 @@ cs162 与考研不是前后项，不要因噎废食，每天想好计划，天�
 
 ### 数学
 ### 408
-Finish cs61c before nju_ics, not absolutely. Practice in reality.
-怎么调和好
 
 
 ## [厚积薄发](./philosophy/habit/修身养性.md)
